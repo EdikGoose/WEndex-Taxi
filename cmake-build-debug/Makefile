@@ -142,6 +142,168 @@ WEndex_Taxi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/build
 .PHONY : WEndex_Taxi/fast
 
+Location.obj: Location.cpp.obj
+
+.PHONY : Location.obj
+
+# target to build an object file
+Location.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj
+.PHONY : Location.cpp.obj
+
+Location.i: Location.cpp.i
+
+.PHONY : Location.i
+
+# target to preprocess a source file
+Location.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Location.cpp.i
+.PHONY : Location.cpp.i
+
+Location.s: Location.cpp.s
+
+.PHONY : Location.s
+
+# target to generate assembly for a file
+Location.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Location.cpp.s
+.PHONY : Location.cpp.s
+
+OrderClasses/Order.obj: OrderClasses/Order.cpp.obj
+
+.PHONY : OrderClasses/Order.obj
+
+# target to build an object file
+OrderClasses/Order.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj
+.PHONY : OrderClasses/Order.cpp.obj
+
+OrderClasses/Order.i: OrderClasses/Order.cpp.i
+
+.PHONY : OrderClasses/Order.i
+
+# target to preprocess a source file
+OrderClasses/Order.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.i
+.PHONY : OrderClasses/Order.cpp.i
+
+OrderClasses/Order.s: OrderClasses/Order.cpp.s
+
+.PHONY : OrderClasses/Order.s
+
+# target to generate assembly for a file
+OrderClasses/Order.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.s
+.PHONY : OrderClasses/Order.cpp.s
+
+Payment/Card.obj: Payment/Card.cpp.obj
+
+.PHONY : Payment/Card.obj
+
+# target to build an object file
+Payment/Card.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj
+.PHONY : Payment/Card.cpp.obj
+
+Payment/Card.i: Payment/Card.cpp.i
+
+.PHONY : Payment/Card.i
+
+# target to preprocess a source file
+Payment/Card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.i
+.PHONY : Payment/Card.cpp.i
+
+Payment/Card.s: Payment/Card.cpp.s
+
+.PHONY : Payment/Card.s
+
+# target to generate assembly for a file
+Payment/Card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.s
+.PHONY : Payment/Card.cpp.s
+
+Users/Driver.obj: Users/Driver.cpp.obj
+
+.PHONY : Users/Driver.obj
+
+# target to build an object file
+Users/Driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj
+.PHONY : Users/Driver.cpp.obj
+
+Users/Driver.i: Users/Driver.cpp.i
+
+.PHONY : Users/Driver.i
+
+# target to preprocess a source file
+Users/Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.i
+.PHONY : Users/Driver.cpp.i
+
+Users/Driver.s: Users/Driver.cpp.s
+
+.PHONY : Users/Driver.s
+
+# target to generate assembly for a file
+Users/Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.s
+.PHONY : Users/Driver.cpp.s
+
+Users/Passenger.obj: Users/Passenger.cpp.obj
+
+.PHONY : Users/Passenger.obj
+
+# target to build an object file
+Users/Passenger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj
+.PHONY : Users/Passenger.cpp.obj
+
+Users/Passenger.i: Users/Passenger.cpp.i
+
+.PHONY : Users/Passenger.i
+
+# target to preprocess a source file
+Users/Passenger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.i
+.PHONY : Users/Passenger.cpp.i
+
+Users/Passenger.s: Users/Passenger.cpp.s
+
+.PHONY : Users/Passenger.s
+
+# target to generate assembly for a file
+Users/Passenger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.s
+.PHONY : Users/Passenger.cpp.s
+
+Users/User.obj: Users/User.cpp.obj
+
+.PHONY : Users/User.obj
+
+# target to build an object file
+Users/User.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/User.cpp.obj
+.PHONY : Users/User.cpp.obj
+
+Users/User.i: Users/User.cpp.i
+
+.PHONY : Users/User.i
+
+# target to preprocess a source file
+Users/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/User.cpp.i
+.PHONY : Users/User.cpp.i
+
+Users/User.s: Users/User.cpp.s
+
+.PHONY : Users/User.s
+
+# target to generate assembly for a file
+Users/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/User.cpp.s
+.PHONY : Users/User.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +340,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... WEndex_Taxi
+	@echo ... Location.obj
+	@echo ... Location.i
+	@echo ... Location.s
+	@echo ... OrderClasses/Order.obj
+	@echo ... OrderClasses/Order.i
+	@echo ... OrderClasses/Order.s
+	@echo ... Payment/Card.obj
+	@echo ... Payment/Card.i
+	@echo ... Payment/Card.s
+	@echo ... Users/Driver.obj
+	@echo ... Users/Driver.i
+	@echo ... Users/Driver.s
+	@echo ... Users/Passenger.obj
+	@echo ... Users/Passenger.i
+	@echo ... Users/Passenger.s
+	@echo ... Users/User.obj
+	@echo ... Users/User.i
+	@echo ... Users/User.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
