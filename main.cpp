@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {
-    srand((unsigned) time(0));
+    srand((unsigned) time(0)); // for unique random
 
     Location location1(5,6);
     Location location2(7,8);
@@ -31,6 +31,7 @@ int main() {
     ComfortCar comfortCar("LADA", "RED", "a355c");
 
     Car* p = &comfortCar;
+
 
 
 

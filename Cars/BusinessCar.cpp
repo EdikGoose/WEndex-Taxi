@@ -8,3 +8,7 @@
 CarType BusinessCar::getType() {
     return CarType::BUSINESS;
 }
+
+void BusinessCar::parkRightInFrontOfTheEntrance() {
+    cout << "Car parked right in front of the entrance";
+}

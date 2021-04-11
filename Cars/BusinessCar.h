@@ -7,10 +7,11 @@
 
 
 #include "Car.h"
+#include "ComfortPlusCar.h"
 
-class BusinessCar: public  Car {
+class BusinessCar: public ComfortPlusCar {
     CarType getType() override;
-
+    void parkRightInFrontOfTheEntrance();
 };
 
 

@@ -7,8 +7,9 @@
 
 
 #include "Car.h"
+#include "ComfortCar.h"
 
-class ComfortPlusCar: public Car {
+class ComfortPlusCar: ComfortCar {
     CarType getType() override;
 };
 
