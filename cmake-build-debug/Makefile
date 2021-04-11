@@ -142,6 +142,168 @@ WEndex_Taxi/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/build
 .PHONY : WEndex_Taxi/fast
 
+Cars/BusinessCar.obj: Cars/BusinessCar.cpp.obj
+
+.PHONY : Cars/BusinessCar.obj
+
+# target to build an object file
+Cars/BusinessCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj
+.PHONY : Cars/BusinessCar.cpp.obj
+
+Cars/BusinessCar.i: Cars/BusinessCar.cpp.i
+
+.PHONY : Cars/BusinessCar.i
+
+# target to preprocess a source file
+Cars/BusinessCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.i
+.PHONY : Cars/BusinessCar.cpp.i
+
+Cars/BusinessCar.s: Cars/BusinessCar.cpp.s
+
+.PHONY : Cars/BusinessCar.s
+
+# target to generate assembly for a file
+Cars/BusinessCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.s
+.PHONY : Cars/BusinessCar.cpp.s
+
+Cars/Car.obj: Cars/Car.cpp.obj
+
+.PHONY : Cars/Car.obj
+
+# target to build an object file
+Cars/Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj
+.PHONY : Cars/Car.cpp.obj
+
+Cars/Car.i: Cars/Car.cpp.i
+
+.PHONY : Cars/Car.i
+
+# target to preprocess a source file
+Cars/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.i
+.PHONY : Cars/Car.cpp.i
+
+Cars/Car.s: Cars/Car.cpp.s
+
+.PHONY : Cars/Car.s
+
+# target to generate assembly for a file
+Cars/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.s
+.PHONY : Cars/Car.cpp.s
+
+Cars/ComfortCar.obj: Cars/ComfortCar.cpp.obj
+
+.PHONY : Cars/ComfortCar.obj
+
+# target to build an object file
+Cars/ComfortCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj
+.PHONY : Cars/ComfortCar.cpp.obj
+
+Cars/ComfortCar.i: Cars/ComfortCar.cpp.i
+
+.PHONY : Cars/ComfortCar.i
+
+# target to preprocess a source file
+Cars/ComfortCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.i
+.PHONY : Cars/ComfortCar.cpp.i
+
+Cars/ComfortCar.s: Cars/ComfortCar.cpp.s
+
+.PHONY : Cars/ComfortCar.s
+
+# target to generate assembly for a file
+Cars/ComfortCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.s
+.PHONY : Cars/ComfortCar.cpp.s
+
+Cars/ComfortPlusCar.obj: Cars/ComfortPlusCar.cpp.obj
+
+.PHONY : Cars/ComfortPlusCar.obj
+
+# target to build an object file
+Cars/ComfortPlusCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj
+.PHONY : Cars/ComfortPlusCar.cpp.obj
+
+Cars/ComfortPlusCar.i: Cars/ComfortPlusCar.cpp.i
+
+.PHONY : Cars/ComfortPlusCar.i
+
+# target to preprocess a source file
+Cars/ComfortPlusCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.i
+.PHONY : Cars/ComfortPlusCar.cpp.i
+
+Cars/ComfortPlusCar.s: Cars/ComfortPlusCar.cpp.s
+
+.PHONY : Cars/ComfortPlusCar.s
+
+# target to generate assembly for a file
+Cars/ComfortPlusCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.s
+.PHONY : Cars/ComfortPlusCar.cpp.s
+
+Cars/EconomyCar.obj: Cars/EconomyCar.cpp.obj
+
+.PHONY : Cars/EconomyCar.obj
+
+# target to build an object file
+Cars/EconomyCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj
+.PHONY : Cars/EconomyCar.cpp.obj
+
+Cars/EconomyCar.i: Cars/EconomyCar.cpp.i
+
+.PHONY : Cars/EconomyCar.i
+
+# target to preprocess a source file
+Cars/EconomyCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.i
+.PHONY : Cars/EconomyCar.cpp.i
+
+Cars/EconomyCar.s: Cars/EconomyCar.cpp.s
+
+.PHONY : Cars/EconomyCar.s
+
+# target to generate assembly for a file
+Cars/EconomyCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.s
+.PHONY : Cars/EconomyCar.cpp.s
+
+Date.obj: Date.cpp.obj
+
+.PHONY : Date.obj
+
+# target to build an object file
+Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj
+.PHONY : Date.cpp.obj
+
+Date.i: Date.cpp.i
+
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
 Location.obj: Location.cpp.obj
 
 .PHONY : Location.obj
@@ -196,6 +358,33 @@ OrderClasses/Order.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.s
 .PHONY : OrderClasses/Order.cpp.s
 
+Output.obj: Output.cpp.obj
+
+.PHONY : Output.obj
+
+# target to build an object file
+Output.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj
+.PHONY : Output.cpp.obj
+
+Output.i: Output.cpp.i
+
+.PHONY : Output.i
+
+# target to preprocess a source file
+Output.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Output.cpp.i
+.PHONY : Output.cpp.i
+
+Output.s: Output.cpp.s
+
+.PHONY : Output.s
+
+# target to generate assembly for a file
+Output.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Output.cpp.s
+.PHONY : Output.cpp.s
+
 Payment/Card.obj: Payment/Card.cpp.obj
 
 .PHONY : Payment/Card.obj
@@ -222,6 +411,87 @@ Payment/Card.s: Payment/Card.cpp.s
 Payment/Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.s
 .PHONY : Payment/Card.cpp.s
+
+SystemClasses/DriverGateway.obj: SystemClasses/DriverGateway.cpp.obj
+
+.PHONY : SystemClasses/DriverGateway.obj
+
+# target to build an object file
+SystemClasses/DriverGateway.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj
+.PHONY : SystemClasses/DriverGateway.cpp.obj
+
+SystemClasses/DriverGateway.i: SystemClasses/DriverGateway.cpp.i
+
+.PHONY : SystemClasses/DriverGateway.i
+
+# target to preprocess a source file
+SystemClasses/DriverGateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.i
+.PHONY : SystemClasses/DriverGateway.cpp.i
+
+SystemClasses/DriverGateway.s: SystemClasses/DriverGateway.cpp.s
+
+.PHONY : SystemClasses/DriverGateway.s
+
+# target to generate assembly for a file
+SystemClasses/DriverGateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.s
+.PHONY : SystemClasses/DriverGateway.cpp.s
+
+SystemClasses/PassengerGateway.obj: SystemClasses/PassengerGateway.cpp.obj
+
+.PHONY : SystemClasses/PassengerGateway.obj
+
+# target to build an object file
+SystemClasses/PassengerGateway.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj
+.PHONY : SystemClasses/PassengerGateway.cpp.obj
+
+SystemClasses/PassengerGateway.i: SystemClasses/PassengerGateway.cpp.i
+
+.PHONY : SystemClasses/PassengerGateway.i
+
+# target to preprocess a source file
+SystemClasses/PassengerGateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.i
+.PHONY : SystemClasses/PassengerGateway.cpp.i
+
+SystemClasses/PassengerGateway.s: SystemClasses/PassengerGateway.cpp.s
+
+.PHONY : SystemClasses/PassengerGateway.s
+
+# target to generate assembly for a file
+SystemClasses/PassengerGateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.s
+.PHONY : SystemClasses/PassengerGateway.cpp.s
+
+SystemClasses/System.obj: SystemClasses/System.cpp.obj
+
+.PHONY : SystemClasses/System.obj
+
+# target to build an object file
+SystemClasses/System.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj
+.PHONY : SystemClasses/System.cpp.obj
+
+SystemClasses/System.i: SystemClasses/System.cpp.i
+
+.PHONY : SystemClasses/System.i
+
+# target to preprocess a source file
+SystemClasses/System.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.i
+.PHONY : SystemClasses/System.cpp.i
+
+SystemClasses/System.s: SystemClasses/System.cpp.s
+
+.PHONY : SystemClasses/System.s
+
+# target to generate assembly for a file
+SystemClasses/System.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.s
+.PHONY : SystemClasses/System.cpp.s
 
 Users/Driver.obj: Users/Driver.cpp.obj
 
@@ -340,15 +610,45 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... WEndex_Taxi
+	@echo ... Cars/BusinessCar.obj
+	@echo ... Cars/BusinessCar.i
+	@echo ... Cars/BusinessCar.s
+	@echo ... Cars/Car.obj
+	@echo ... Cars/Car.i
+	@echo ... Cars/Car.s
+	@echo ... Cars/ComfortCar.obj
+	@echo ... Cars/ComfortCar.i
+	@echo ... Cars/ComfortCar.s
+	@echo ... Cars/ComfortPlusCar.obj
+	@echo ... Cars/ComfortPlusCar.i
+	@echo ... Cars/ComfortPlusCar.s
+	@echo ... Cars/EconomyCar.obj
+	@echo ... Cars/EconomyCar.i
+	@echo ... Cars/EconomyCar.s
+	@echo ... Date.obj
+	@echo ... Date.i
+	@echo ... Date.s
 	@echo ... Location.obj
 	@echo ... Location.i
 	@echo ... Location.s
 	@echo ... OrderClasses/Order.obj
 	@echo ... OrderClasses/Order.i
 	@echo ... OrderClasses/Order.s
+	@echo ... Output.obj
+	@echo ... Output.i
+	@echo ... Output.s
 	@echo ... Payment/Card.obj
 	@echo ... Payment/Card.i
 	@echo ... Payment/Card.s
+	@echo ... SystemClasses/DriverGateway.obj
+	@echo ... SystemClasses/DriverGateway.i
+	@echo ... SystemClasses/DriverGateway.s
+	@echo ... SystemClasses/PassengerGateway.obj
+	@echo ... SystemClasses/PassengerGateway.i
+	@echo ... SystemClasses/PassengerGateway.s
+	@echo ... SystemClasses/System.obj
+	@echo ... SystemClasses/System.i
+	@echo ... SystemClasses/System.s
 	@echo ... Users/Driver.obj
 	@echo ... Users/Driver.i
 	@echo ... Users/Driver.s

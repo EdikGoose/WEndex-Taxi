@@ -13,7 +13,7 @@ class Card {
 private:
     int number;
 public:
-    Card(int number);
+    explicit Card(int number);
 };
 
 

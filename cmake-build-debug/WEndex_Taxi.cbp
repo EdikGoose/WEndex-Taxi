@@ -80,6 +80,45 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Location.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
@@ -92,6 +131,12 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Output.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
@@ -99,6 +144,24 @@
 			<Option target="WEndex_Taxi"/>
 		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp">

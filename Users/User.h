@@ -15,7 +15,7 @@ using namespace std;
 class User {
 protected:
     string name;
-    double rating;
+    double rating = 0;
     string phoneNumber;
     string password;
     list<Order> orderHistory;

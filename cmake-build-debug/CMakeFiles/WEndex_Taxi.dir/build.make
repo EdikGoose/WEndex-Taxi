@@ -167,6 +167,136 @@ CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\OrderClasses\Order.cpp -o CMakeFiles\WEndex_Taxi.dir\OrderClasses\Order.cpp.s
 
+CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj: ../Date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Date.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Date.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Date.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Date.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Date.cpp > CMakeFiles\WEndex_Taxi.dir\Date.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Date.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Date.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Date.cpp -o CMakeFiles\WEndex_Taxi.dir\Date.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj: ../SystemClasses/PassengerGateway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\PassengerGateway.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\PassengerGateway.cpp
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\PassengerGateway.cpp > CMakeFiles\WEndex_Taxi.dir\SystemClasses\PassengerGateway.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\PassengerGateway.cpp -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\PassengerGateway.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj: ../SystemClasses/DriverGateway.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\DriverGateway.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\DriverGateway.cpp
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\DriverGateway.cpp > CMakeFiles\WEndex_Taxi.dir\SystemClasses\DriverGateway.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\DriverGateway.cpp -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\DriverGateway.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../SystemClasses/System.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\System.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\System.cpp
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\System.cpp > CMakeFiles\WEndex_Taxi.dir\SystemClasses\System.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\System.cpp -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\System.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj: ../Cars/Car.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Cars\Car.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Cars\Car.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Cars\Car.cpp > CMakeFiles\WEndex_Taxi.dir\Cars\Car.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Cars\Car.cpp -o CMakeFiles\WEndex_Taxi.dir\Cars\Car.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj: ../Cars/EconomyCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Cars\EconomyCar.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Cars\EconomyCar.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Cars\EconomyCar.cpp > CMakeFiles\WEndex_Taxi.dir\Cars\EconomyCar.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Cars\EconomyCar.cpp -o CMakeFiles\WEndex_Taxi.dir\Cars\EconomyCar.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj: ../Cars/ComfortCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Cars\ComfortCar.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortCar.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortCar.cpp > CMakeFiles\WEndex_Taxi.dir\Cars\ComfortCar.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortCar.cpp -o CMakeFiles\WEndex_Taxi.dir\Cars\ComfortCar.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj: ../Cars/ComfortPlusCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Cars\ComfortPlusCar.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortPlusCar.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortPlusCar.cpp > CMakeFiles\WEndex_Taxi.dir\Cars\ComfortPlusCar.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Cars\ComfortPlusCar.cpp -o CMakeFiles\WEndex_Taxi.dir\Cars\ComfortPlusCar.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj: ../Cars/BusinessCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Cars\BusinessCar.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Cars\BusinessCar.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Cars\BusinessCar.cpp > CMakeFiles\WEndex_Taxi.dir\Cars\BusinessCar.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Cars\BusinessCar.cpp -o CMakeFiles\WEndex_Taxi.dir\Cars\BusinessCar.cpp.s
+
+CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Output.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Output.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Output.cpp
+
+CMakeFiles/WEndex_Taxi.dir/Output.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Output.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Output.cpp > CMakeFiles\WEndex_Taxi.dir\Output.cpp.i
+
+CMakeFiles/WEndex_Taxi.dir/Output.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Output.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Output.cpp -o CMakeFiles\WEndex_Taxi.dir\Output.cpp.s
+
 # Object files for target WEndex_Taxi
 WEndex_Taxi_OBJECTS = \
 "CMakeFiles/WEndex_Taxi.dir/main.cpp.obj" \
@@ -175,7 +305,17 @@ WEndex_Taxi_OBJECTS = \
 "CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj" \
 "CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj" \
 "CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj" \
-"CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj"
+"CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj" \
+"CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj"
 
 # External object files for target WEndex_Taxi
 WEndex_Taxi_EXTERNAL_OBJECTS =
@@ -187,11 +327,21 @@ WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Cars/Car.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Cars/BusinessCar.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/build.make
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/linklibs.rsp
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/objects1.rsp
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable WEndex_Taxi.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable WEndex_Taxi.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\WEndex_Taxi.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,27 +6,33 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+iostream
+-
+ctime
+-
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
+iostream
+-
 
 C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
-
-C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
-
-C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
-
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
-User.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
-
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
-User.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
-../Payment/Card.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
-../Payment/PaymentMethod.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
+../Date.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
 ../Location.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp
+Output.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+Date.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+OrderClasses/Order.h
+C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
+Users/User.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 iostream
@@ -37,12 +43,4 @@ utility
 -
 ../OrderClasses/Order.h
 C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
-
-C:/Users/super/CLionProjects/WEndex-Taxi/main.cpp
-iostream
--
-Users/Passenger.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
-Users/Driver.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
 
