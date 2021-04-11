@@ -19,6 +19,9 @@ private:
 public:
     Passenger(const string &name, const string &phoneNumber, const string &password);
 
+    void addPinnedAddress(const Location& location);
+
+    void addCard(const Card& card);
 
 
 };

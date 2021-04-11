@@ -7,12 +7,15 @@
 
 
 #include "User.h"
+#include "../Cars/Car.h"
 
 class Driver: public User {
 private:
-    //Car* car;
+    Car* car;
 public:
     Driver(const string &name, const string &phoneNumber, const string &password);
+
+    void pinCar(Car* car);
 
 };
 
