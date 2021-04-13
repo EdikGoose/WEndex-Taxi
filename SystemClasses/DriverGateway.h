@@ -15,7 +15,7 @@ private:
     static Driver* addDriver(const string &name, const string &phoneNumber, const string &password);
 
 public:
-    static const list<Driver> &getListOfAllDrivers();
+    static list<Driver> &getListOfAllDrivers();
     static void addOrder(Driver* driver, Order* order);
 };
 

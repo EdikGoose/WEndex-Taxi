@@ -10,9 +10,9 @@
 #include "ComfortCar.h"
 
 class ComfortPlusCar: ComfortCar {
-    CarType getType() override;
+    CarType getType() const override;
 
-    int getRate() override;
+    int getRate() const  override;
 
     friend class CarGateway;
 protected:

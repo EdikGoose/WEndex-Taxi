@@ -23,10 +23,10 @@ public:
     static void printInfoAboutOrder(Order* order);
 
 
-    static void printInfoAboutDriver(Driver* driver);
-    static void printInfoAboutPassenger(Passenger *passenger);
+    static void printInfoAboutDriver(const Driver* driver);
+    static void printInfoAboutPassenger(const Passenger *passenger);
 
-    static void printInfoAboutCar(Car* car);
+    static void printInfoAboutCar(const Car* car);
 
     static void printInfoAboutLocation(const Location& location);
 

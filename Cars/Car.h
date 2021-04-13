@@ -29,9 +29,9 @@ protected:
     Car(string model, string color, string number);
 
 public:
-    virtual CarType getType() = 0;
+    virtual CarType getType() const = 0;
 
-    virtual int getRate() = 0;
+    virtual int getRate() const = 0;
 
 
 

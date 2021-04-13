@@ -30,24 +30,28 @@ const list<Order> &System::getListOfAllOrders() {
 
 
 Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
-    for(Driver driver: DriverGateway::getListOfAllDrivers()){
-        if(driver.getCar()->getType() == carType && driver.isReady(Date::getCurrentDate())){
-            int distance = Location::getDistance(startLocation, endLocation)*100; // in km (scale of map is 1:100)
-            int duration = distance / 70; // average speed of car is 70 km/h
-            Date startDate = Date::getCurrentDate();
-            Date endDate = startDate+duration;
+    Date startDate = Date::getCurrentDate();
+    list<Driver> listOfDrivers = DriverGateway::getListOfAllDrivers();
 
-            int cost = distance*driver.getCar()->getRate();
+    for(Driver& driver: DriverGateway::getListOfAllDrivers()) {
+        if (driver.getCar()->getType() == carType && driver.isReady(startDate)) {
+            int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
+            int duration = distance / 70; // average speed of car is 70 km/h
+            Date endDate = startDate + duration;
+            int cost = distance * driver.getCar()->getRate();
 
             Output::printCondition(cost,duration);
-            string answer = "yes";
-            //cin >> answer;
-            if(answer == "yes"){
+            string answer;
+            cin >> answer;
+
+            if(answer == "Yes"){
                 return makeOrder(startDate,endDate,startLocation,endLocation,passenger,&driver,cost,distance);
             }
-
         }
     }
+
+
+
 
 }
 
@@ -62,7 +66,7 @@ Order* System::makeOrder(const Date &startDate, const Date &endDate, const Locat
 
 
     if(driver->getCar()->getType() > CarType::ECONOMY){
-        //dynamic_cast<ComfortCar*>(driver->getCar())->decreaseBottles();
+        dynamic_cast<ComfortCar*>(driver->getCar())->decreaseBottles();
     }
 
     return &listOfAllOrders.back();

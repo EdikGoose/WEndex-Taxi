@@ -10,7 +10,7 @@ Driver* DriverGateway::addDriver(const string &name, const string &phoneNumber, 
     return &listOfDrivers.back();
 }
 
-const list<Driver> &DriverGateway::getListOfAllDrivers() {
+list<Driver> &DriverGateway::getListOfAllDrivers() {
     return listOfDrivers;
 }
 

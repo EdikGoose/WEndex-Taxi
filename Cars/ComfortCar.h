@@ -23,9 +23,9 @@ public:
 
     [[nodiscard]] int getFreeBottleOfWater() const;
 
-    CarType getType() override;
+    CarType getType() const  override;
 
-    int getRate() override;
+    int getRate() const override;
 };
 
 

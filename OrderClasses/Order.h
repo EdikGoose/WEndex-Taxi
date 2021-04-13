@@ -22,8 +22,8 @@ private:
     Location endLocation;
 
 
-    Passenger* passenger;
-    Driver* driver;
+    const Passenger* passenger;
+    const Driver* driver;
 
 
     int cost;
@@ -32,47 +32,26 @@ private:
     int id;
 public:
     Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
-          Passenger *passenger, Driver *driver, int cost, int distance);
+          Passenger *passenger, const Driver *driver, int cost, int distance);
 
 
-    [[nodiscard]] const Date &getStartDate() const {
-        return startDate;
-    }
+    const Date &getStartDate() const;
 
-    [[nodiscard]] const Date &getEndTime() const {
-        return endDate;
-    }
+    const Date &getEndDate() const;
 
-    [[nodiscard]] const Location &getStartLocation() const {
-        return startLocation;
-    }
+    const Location &getStartLocation() const;
 
-    [[nodiscard]] const Location &getEndLocation() const {
-        return endLocation;
-    }
+    const Location &getEndLocation() const;
 
-    [[nodiscard]] Passenger *getPassenger() const {
-        return passenger;
-    }
+    const Passenger *getPassenger() const;
 
-    [[nodiscard]] Driver *getDriver() const {
-        return driver;
-    }
+    const Driver *getDriver() const;
 
-    [[nodiscard]] int getCost() const {
-        return cost;
-    }
+    int getCost() const;
 
-    [[nodiscard]] int getDistance() const {
-        return distance;
-    }
+    int getDistance() const;
 
-    [[nodiscard]] int getId() const {
-        return id;
-    }
-
-
-
+    int getId() const;
 
 
 };

@@ -4,7 +4,7 @@
 
 #include "ComfortCar.h"
 
-CarType ComfortCar::getType() {
+CarType ComfortCar::getType() const {
     return CarType::COMFORT;
 }
 
@@ -22,6 +22,6 @@ int ComfortCar::getFreeBottleOfWater() const {
 
 ComfortCar::ComfortCar() {}
 
-int ComfortCar::getRate() {
+int ComfortCar::getRate() const {
     return 30;
 }
