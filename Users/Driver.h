@@ -17,7 +17,8 @@ private:
     Driver(const string &name, const string &phoneNumber, const string &password);
 public:
 
-    bool isReady(Date startDate);
+
+    bool isReady(Date startDate) const;
 
     void pinCar(Car* car);
 

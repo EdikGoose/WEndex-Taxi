@@ -15,7 +15,7 @@ Car *Driver::getCar() const {
     return car;
 }
 
-bool Driver::isReady(Date startDate) {
+bool Driver::isReady(Date startDate) const {
     if(orderHistory.empty()){
         return true;
     }

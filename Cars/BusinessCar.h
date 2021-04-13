@@ -11,7 +11,7 @@
 
 
 class BusinessCar: public ComfortPlusCar {
-    CarType getType() override;
+    CarType getType() const override;
     void parkRightInFrontOfTheEntrance();
     friend class CarGateway;
 protected:
@@ -21,7 +21,7 @@ public:
     BusinessCar(const string &model, const string &color, const string &number);
 
 private:
-    int getRate() override;
+    int getRate() const  override;
 };
 
 

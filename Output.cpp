@@ -38,13 +38,13 @@ void Output::printInfoAboutOrder(Order* const order) {
     printInfoAboutDate(order->getStartDate());
 
     cout << "   End time:\n    ";
-    printInfoAboutDate(order->getEndTime());
+    printInfoAboutDate(order->getEndDate());
 
     cout << "   Cost:\n    ";
     cout << order->getCost() << endl;
 }
 
-void Output::printInfoAboutPassenger(Passenger* passenger) {
+void Output::printInfoAboutPassenger(const Passenger* passenger) {
     cout << "Name: " << passenger->getName() << ". Rating:" << passenger->getRating() << ". Phone number: " << passenger->getPhoneNumber() << endl;
 }
 
@@ -52,7 +52,7 @@ void Output::printInfoAboutLocation(const Location &location) {
     cout << "Address: " << location.getAddress() << ". X: " << location.getCoordinateX() << ". Y: " << location.getCoordinateY() << "." << endl;
 }
 
-void Output::printInfoAboutCar(Car *car) {
+void Output::printInfoAboutCar(const Car *car) {
     switch (car->getType()) {
         case CarType::ECONOMY:
             cout << "Type: economy. ";
@@ -71,7 +71,7 @@ void Output::printInfoAboutCar(Car *car) {
 
 }
 
-void Output::printInfoAboutDriver(Driver *driver) {
+void Output::printInfoAboutDriver(const Driver *driver) {
     cout << "Name: " << driver->getName() << ". Rating:" << driver->getRating() << ". Phone number: " << driver->getPhoneNumber() << endl;
     cout << "       " << "Car of this driver: ";
     printInfoAboutCar(driver->getCar());

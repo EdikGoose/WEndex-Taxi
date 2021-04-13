@@ -222,25 +222,3 @@ utility
 ../OrderClasses/Order.h
 C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
 
-C:/Users/super/CLionProjects/WEndex-Taxi/main.cpp
-iostream
--
-Users/Passenger.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
-Users/Driver.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
-Date.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
-Output.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
-Cars/Car.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
-Cars/ComfortCar.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
-SystemClasses/System.h
-C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
-Cars/EconomyCar.h
-C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
-ctime
--
-

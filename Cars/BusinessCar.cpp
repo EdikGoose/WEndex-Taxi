@@ -5,7 +5,7 @@
 #include "BusinessCar.h"
 
 
-CarType BusinessCar::getType() {
+CarType BusinessCar::getType() const  {
     return CarType::BUSINESS;
 }
 
@@ -18,6 +18,6 @@ void BusinessCar::parkRightInFrontOfTheEntrance() {
 BusinessCar::BusinessCar(const string &model, const string &color, const string &number) : ComfortPlusCar(model, color,
                                                                                                           number) {}
 
-int BusinessCar::getRate() {
+int BusinessCar::getRate() const {
     return 50;
 }

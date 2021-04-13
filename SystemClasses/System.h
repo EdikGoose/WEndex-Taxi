@@ -32,7 +32,7 @@ public:
 
 private:
     static Order* makeOrder(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,
-                            Passenger *passenger, Driver *driver, int cost, int distance);
+                             Passenger *passenger,  Driver *driver, int cost, int distance);
 
 };
 

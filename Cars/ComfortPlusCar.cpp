@@ -5,7 +5,7 @@
 #include "ComfortPlusCar.h"
 
 
-CarType ComfortPlusCar::getType() {
+CarType ComfortPlusCar::getType() const  {
     return CarType::COMFORTPLUS;
 }
 
@@ -13,6 +13,6 @@ ComfortPlusCar::ComfortPlusCar(const string &model, const string &color, const s
                                                                                                             color,
                                                                                                             number) {}
 
-int ComfortPlusCar::getRate() {
+int ComfortPlusCar::getRate() const {
     return 35;
 }

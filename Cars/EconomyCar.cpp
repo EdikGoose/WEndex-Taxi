@@ -4,12 +4,12 @@
 
 #include "EconomyCar.h"
 
-CarType EconomyCar::getType() {
+CarType EconomyCar::getType() const {
     return CarType::ECONOMY;
 }
 
 EconomyCar::EconomyCar(const string &model, const string &color, const string &number) : Car(model, color, number) {}
 
-int EconomyCar::getRate() {
+int EconomyCar::getRate() const {
     return 20;
 }

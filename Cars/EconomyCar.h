@@ -9,10 +9,10 @@
 #include "Car.h"
 
 class EconomyCar: public Car{
-    CarType getType() override;
+    CarType getType() const override;
 
 public:
-    int getRate() override;
+    int getRate() const override;
 
 private:
     friend class CarGateway;
