@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.cpp
+BusinessCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
 Car.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
 ComfortPlusCar.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.cpp
+Car.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
+utility
+-
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
 iostream
@@ -26,15 +36,27 @@ ctime
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.cpp
+ComfortCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
 Car.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.cpp
+ComfortPlusCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
 Car.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
 ComfortCar.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.cpp
+EconomyCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
 Car.h
@@ -52,11 +74,23 @@ iostream
 cmath
 -
 
+C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.cpp
+Order.h
+C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
 ../Date.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
 ../Location.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp
+iostream
+-
+Output.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+Users/Passenger.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
 Date.h
@@ -74,6 +108,10 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.cpp
+CarGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
 iostream
 -
@@ -88,13 +126,39 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
 ../Cars/BusinessCar.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp
+DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
 ../Users/Driver.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp
+PassengerGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
 ../Users/Passenger.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp
+System.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+CarGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
+../Output.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+../Cars/EconomyCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
+../Cars/ComfortCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
+../Cars/ComfortPlusCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
+../Cars/BusinessCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
 iostream
@@ -110,11 +174,23 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
 CarGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp
+Driver.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
 User.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 ../Cars/Car.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
+../SystemClasses/DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.cpp
+Passenger.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+../Cars/CarType.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
 ../SystemClasses/DriverGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
 
@@ -131,6 +207,10 @@ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
 ../Cars/CarType.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.cpp
+User.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 iostream
