@@ -19,9 +19,12 @@ protected:
     string phoneNumber;
     string password;
     list<Order*> orderHistory;
+    list<int> orderHistoryID;
 public:
     User(string name, string phoneNumber, string password) : name(move(name)),phoneNumber(move(phoneNumber)),
-                                                                                                 password(move(password)) {}
+                                                                                                 password(move(password)) {};
+
+
     [[nodiscard]] const string &getName() const;
 
     [[nodiscard]] double getRating() const;
@@ -30,7 +33,15 @@ public:
 
     void addOrder(Order* order);
 
-    const list<Order *> &getOrderHistory() const;
+    [[nodiscard]] const list<Order *> &getOrderHistory() const;
+
+    void addIdOfOrder(int id);
+
+    const list<int> &getOrderHistoryId() const;
+
+    const string &getPassword() const;
+
+
 
 };
 

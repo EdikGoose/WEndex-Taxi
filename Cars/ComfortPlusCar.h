@@ -9,7 +9,7 @@
 #include "Car.h"
 #include "ComfortCar.h"
 
-class ComfortPlusCar: ComfortCar {
+class ComfortPlusCar: public ComfortCar {
     CarType getType() const override;
 
     int getRate() const  override;

@@ -32,15 +32,13 @@ const list<Order> &System::getListOfAllOrders() {
 
 Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
     Date startDate = Date::getCurrentDate();
-    list<Driver> listOfDrivers = DriverGateway::getListOfAllDrivers();
-
     for(Driver& driver: DriverGateway::getListOfAllDrivers()) {
         if (driver.getCar()->getType() == carType && driver.isReady(startDate)) {
             int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
-            int duration = distance / 70 ; // average speed of car is 70 km/h
+           // int duration = distance / 70 ; // average speed of car is 70 km/h
+            int duration = 1; // we use constant 1 minute for easily testing. For real program I'll use the previous line
             Date endDate = startDate + duration;
             int cost = (distance * driver.getCar()->getRate()) / 1000;
-
             Output::printCondition(cost,duration);
             string answer;
             cin >> answer;
@@ -70,6 +68,15 @@ Order* System::makeOrder(const Date &startDate, const Date &endDate, const Locat
     }
 
     return &listOfAllOrders.back();
+}
+
+const Order *System::findById(int id) {
+    for(const Order& order: listOfAllOrders){
+        if(order.getId() == id){
+            return &order;
+        }
+    }
+    return nullptr;
 }
 
 

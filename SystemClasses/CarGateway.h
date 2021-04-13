@@ -18,6 +18,7 @@ using namespace std;
 
 class CarGateway {
     friend class System;
+    friend class DB_Helper;
 private:
     static inline list<EconomyCar> listOfEconomy = {};
     static inline list<ComfortCar> listOfComfort = {};
@@ -27,14 +28,15 @@ private:
     static Car* addCar(const string& model, const string& color, const string& number, CarType carType);
 
 public:
-    static const list<EconomyCar> &getListOfEconomy();
+    static list<EconomyCar> &getListOfEconomy();
 
-    static const list<ComfortCar> &getListOfComfort();
+    static list<ComfortCar> &getListOfComfort();
 
-    static const list<ComfortPlusCar> &getListOfComfortPlus();
+    static list<ComfortPlusCar> &getListOfComfortPlus();
 
-    static const list<BusinessCar> &getListOfBusiness();
+    static list<BusinessCar> &getListOfBusiness();
 
+    static Car* findCarByNumber(const string& numberOfCar);
 };
 
 

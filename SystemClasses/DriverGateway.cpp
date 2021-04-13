@@ -17,3 +17,11 @@ list<Driver> &DriverGateway::getListOfAllDrivers() {
 void DriverGateway::addOrder(Driver *driver, Order *order) {
     driver->addOrder(order);
 }
+
+Driver *DriverGateway::findByPhoneNumber(const string& phoneNumber) {
+    for(Driver& driver: getListOfAllDrivers()){
+        if(driver.getPhoneNumber() == phoneNumber)
+            return &driver;
+    }
+    return nullptr;
+}

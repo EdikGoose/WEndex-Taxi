@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/WEndex_Taxi.dir/Cars/ComfortCar.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Cars/ComfortPlusCar.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj"
+  "CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj"

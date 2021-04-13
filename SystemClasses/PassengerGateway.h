@@ -10,16 +10,18 @@
 
 class PassengerGateway {
     friend class System;
+    friend class DB_Helper;
 
 private:
     static inline list<Passenger> listOfPassengers = {};
     static Passenger* addPassenger(const string &name, const string &phoneNumber, const string &password);
 
 public:
-    static const list<Passenger> &getListOfAllPassengers();
+    static list<Passenger> &getListOfAllPassengers();
 
     static void addOrder(Passenger* passenger, Order* order);
 
+    static Passenger* findByPhoneNumber(const string& phoneNumber);
 };
 
 

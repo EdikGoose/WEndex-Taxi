@@ -113,6 +113,12 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>

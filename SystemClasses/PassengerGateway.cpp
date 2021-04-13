@@ -19,3 +19,11 @@ const list<Passenger> &PassengerGateway::getListOfAllPassengers() {
 void PassengerGateway::addOrder(Passenger *passenger, Order *order) {
     passenger->addOrder(order);
 }
+
+Passenger *PassengerGateway::findByPhoneNumber(const string& phoneNumber) {
+    for(Passenger& passenger: getListOfAllPassengers()){
+        if(passenger.getPhoneNumber() == phoneNumber)
+            return &passenger;
+    }
+    return nullptr;
+}

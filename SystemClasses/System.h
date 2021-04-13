@@ -11,7 +11,7 @@
 #include "DriverGateway.h"
 #include "../Cars/EconomyCar.h"
 #include "CarGateway.h"
-
+#include "../DB_Helper.h"
 
 using namespace std;
 
@@ -29,6 +29,8 @@ public:
     static Order* preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType);
 
     static const list<Order> &getListOfAllOrders();
+
+    static const Order* findById(int id);
 
 private:
     static Order* makeOrder(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,

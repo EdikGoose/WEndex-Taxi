@@ -33,6 +33,27 @@ CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj: ../Cars/EconomyCar.cpp
 CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj: ../Cars/EconomyCar.h
 CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj: ../Location.h
 
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/BusinessCar.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/Car.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/CarType.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/ComfortCar.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/ComfortPlusCar.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Cars/EconomyCar.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../DB_Helper.cpp
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../DB_Helper.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Date.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Location.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../OrderClasses/Order.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Payment/Card.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Payment/PaymentMethod.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../SystemClasses/CarGateway.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../SystemClasses/DriverGateway.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../SystemClasses/PassengerGateway.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../SystemClasses/System.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Users/Driver.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Users/Passenger.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Users/User.h
+
 CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj: ../Date.cpp
 CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj: ../Date.h
 
@@ -54,7 +75,6 @@ CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Output.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Payment/Card.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Payment/PaymentMethod.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../SystemClasses/DriverGateway.h
-CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../SystemClasses/PassengerGateway.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Users/Driver.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Users/Passenger.h
 CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj: ../Users/User.h
@@ -99,6 +119,7 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Cars/CarType.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Cars/ComfortCar.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Cars/ComfortPlusCar.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Cars/EconomyCar.h
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../DB_Helper.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Location.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../OrderClasses/Order.h
@@ -132,7 +153,6 @@ CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../OrderClasses/Order.h
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../Payment/Card.h
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../Payment/PaymentMethod.h
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../SystemClasses/DriverGateway.h
-CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../SystemClasses/PassengerGateway.h
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../Users/Driver.h
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../Users/Passenger.cpp
 CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj: ../Users/Passenger.h
@@ -150,6 +170,7 @@ CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Cars/CarType.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Cars/ComfortCar.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Cars/ComfortPlusCar.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Cars/EconomyCar.h
+CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../DB_Helper.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Location.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../OrderClasses/Order.h

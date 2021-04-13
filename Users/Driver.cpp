@@ -21,7 +21,7 @@ bool Driver::isReady(Date startDate) const {
     }
     Order lastOrder = *orderHistory.back();
 
-    if(startDate >= lastOrder.getStartDate() && startDate <= lastOrder.getEndDate()){
+    if(startDate >= lastOrder.getEndDate()){
         return true;
     }
 

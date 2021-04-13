@@ -23,3 +23,17 @@ void User::addOrder(Order* order) {
 const list<Order *> &User::getOrderHistory() const {
     return orderHistory;
 }
+
+void User::addIdOfOrder(int id) {
+    orderHistoryID.push_back(id);
+}
+
+const list<int> &User::getOrderHistoryId() const {
+    return orderHistoryID;
+}
+
+const string &User::getPassword() const {
+    return password;
+}
+
+

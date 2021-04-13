@@ -34,6 +34,8 @@ public:
     virtual int getRate() const = 0;
 
 
+    static CarType stringToCarType(const string& type);
+    static string carTypeToString(CarType carType);
 
     void setLocation(const Location &location);
 

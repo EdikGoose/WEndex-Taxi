@@ -62,7 +62,7 @@ void Output::printInfoAboutCar(const Car *car) {
             cout << "Type: business. ";
 
     }
-    cout << "Model: " << car->getModel() << ". Number: " << car->getNumber() << ". Color:" << car->getColor() << endl;
+    cout << "Model: " << car->getModel() << ". Number: " << car->getNumber() << ". Color: " << car->getColor() << endl;
 
 }
 
@@ -79,7 +79,7 @@ void Output::printCondition(int price, int duration) {
 }
 
 void Output::printMessageAboutAbsence() {
-    cout << "Unfortunately, there are no free drivers yet. Wait some seconds" << endl;
+    cout << "Unfortunately, there are no free drivers yet. Please, repeat the order after some minutes" << endl;
 
 }
 

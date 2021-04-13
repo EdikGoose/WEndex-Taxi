@@ -21,18 +21,47 @@ Car* CarGateway::addCar(const string& model, const string& color, const string& 
     }
 }
 
-const list<EconomyCar> &CarGateway::getListOfEconomy() {
+list<EconomyCar> &CarGateway::getListOfEconomy() {
     return listOfEconomy;
 }
 
-const list<ComfortCar> &CarGateway::getListOfComfort() {
+list<ComfortCar> &CarGateway::getListOfComfort() {
     return listOfComfort;
 }
 
-const list<ComfortPlusCar> &CarGateway::getListOfComfortPlus() {
+list<ComfortPlusCar> &CarGateway::getListOfComfortPlus() {
     return listOfComfortPlus;
 }
 
-const list<BusinessCar> &CarGateway::getListOfBusiness() {
+list<BusinessCar> &CarGateway::getListOfBusiness() {
     return listOfBusiness;
+}
+
+Car *CarGateway::findCarByNumber(const string& numberOfCar) {
+    Car* refToCar = nullptr;
+    for(BusinessCar& car: CarGateway::getListOfBusiness()){
+        if(car.getNumber() == numberOfCar){
+            refToCar = &car;
+            break;
+        }
+    }
+    for(EconomyCar& car: CarGateway::getListOfEconomy()){
+        if(car.getNumber() == numberOfCar){
+            refToCar = &car;
+            break;
+        }
+    }
+    for(ComfortCar& car: CarGateway::getListOfComfort()){
+        if(car.getNumber() == numberOfCar){
+            refToCar = &car;
+            break;
+        }
+    }
+    for(ComfortPlusCar& car: CarGateway::getListOfComfortPlus()){
+        if(car.getNumber() == numberOfCar){
+            refToCar = &car;
+            break;
+        }
+    }
+    return refToCar;
 }

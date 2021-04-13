@@ -10,6 +10,7 @@
 
 class DriverGateway {
     friend class System;
+    friend class DB_Helper;
 private:
     static inline list<Driver> listOfDrivers = {};
     static Driver* addDriver(const string &name, const string &phoneNumber, const string &password, Car* car);
@@ -17,6 +18,10 @@ private:
 public:
     static list<Driver> &getListOfAllDrivers();
     static void addOrder(Driver* driver, Order* order);
+
+
+
+    static Driver* findByPhoneNumber(const string& PhoneNumber);
 };
 
 

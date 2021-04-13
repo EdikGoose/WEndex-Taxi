@@ -277,6 +277,33 @@ Cars/EconomyCar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.s
 .PHONY : Cars/EconomyCar.cpp.s
 
+DB_Helper.obj: DB_Helper.cpp.obj
+
+.PHONY : DB_Helper.obj
+
+# target to build an object file
+DB_Helper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
+.PHONY : DB_Helper.cpp.obj
+
+DB_Helper.i: DB_Helper.cpp.i
+
+.PHONY : DB_Helper.i
+
+# target to preprocess a source file
+DB_Helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.i
+.PHONY : DB_Helper.cpp.i
+
+DB_Helper.s: DB_Helper.cpp.s
+
+.PHONY : DB_Helper.s
+
+# target to generate assembly for a file
+DB_Helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.s
+.PHONY : DB_Helper.cpp.s
+
 Date.obj: Date.cpp.obj
 
 .PHONY : Date.obj
@@ -652,6 +679,9 @@ help:
 	@echo ... Cars/EconomyCar.obj
 	@echo ... Cars/EconomyCar.i
 	@echo ... Cars/EconomyCar.s
+	@echo ... DB_Helper.obj
+	@echo ... DB_Helper.i
+	@echo ... DB_Helper.s
 	@echo ... Date.obj
 	@echo ... Date.i
 	@echo ... Date.s
