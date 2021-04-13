@@ -22,7 +22,7 @@ private:
 public:
     static Passenger* registerPassenger(const string& name, const string& phoneNumber, const string& password);
 
-    static Driver* registerDriver(const string &name, const string &phoneNumber, const string &password);
+    static Driver* registerDriver(const string &name, const string &phoneNumber, const string &password, Car* car);
 
     static Car* registerCar(const string& model, const string& color, const string& number, CarType carType);
 

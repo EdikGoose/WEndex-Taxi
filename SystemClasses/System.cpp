@@ -10,14 +10,15 @@
 #include "../Cars/ComfortCar.h"
 #include "../Cars/ComfortPlusCar.h"
 #include "../Cars/BusinessCar.h"
+#include <bits/stdc++.h>
 
 
 Passenger* System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
     return PassengerGateway::addPassenger(name,phoneNumber,password);
 }
 
-Driver* System::registerDriver(const string &name, const string &phoneNumber, const string &password) {
-    return DriverGateway::addDriver(name,phoneNumber,password);
+Driver* System::registerDriver(const string &name, const string &phoneNumber, const string &password, Car* car) {
+    return DriverGateway::addDriver(name,phoneNumber,password, car);
 }
 
 Car* System::registerCar(const string& model, const string& color, const string& number, CarType carType) {
@@ -36,9 +37,9 @@ Order* System::preOrder(const Location &startLocation, const Location &endLocati
     for(Driver& driver: DriverGateway::getListOfAllDrivers()) {
         if (driver.getCar()->getType() == carType && driver.isReady(startDate)) {
             int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
-            int duration = distance / 70; // average speed of car is 70 km/h
+            int duration = distance / 70 ; // average speed of car is 70 km/h
             Date endDate = startDate + duration;
-            int cost = distance * driver.getCar()->getRate();
+            int cost = (distance * driver.getCar()->getRate()) / 1000;
 
             Output::printCondition(cost,duration);
             string answer;
@@ -49,9 +50,8 @@ Order* System::preOrder(const Location &startLocation, const Location &endLocati
             }
         }
     }
-
-
-
+    Output::printMessageAboutAbsence();
+    return nullptr;
 
 }
 

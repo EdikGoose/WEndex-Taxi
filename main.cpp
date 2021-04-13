@@ -15,18 +15,30 @@ int main() {
     srand((unsigned) time(nullptr)); // for unique random
 
     Location location1(5,6);
-    Location location2(7,8);
+    Location location2(19,15);
+    Location location3(41,10);
 
-    Car* comfortCar = System::registerCar("LADA", "RED", "a355c", CarType::COMFORT);
+    Car* comfortCar1 = System::registerCar("LADA", "RED", "a355c", CarType::COMFORT);
+    Car* comfortCar2 = System::registerCar("BMW", "BLUE", "a355c", CarType::ECONOMY);
 
-    Driver* driver = System::registerDriver("Mike","891385","135df");
+
+    System::registerDriver("Mike","891385","135df", comfortCar1);
+    System::registerDriver("Zuev","891385","135df", comfortCar2);
     Passenger* passenger = System::registerPassenger("Eduard","13524","135f");
 
-    driver->pinCar(comfortCar);
 
-    Order* order = System::preOrder(location1,location2,passenger,CarType::COMFORT);
+    System::preOrder(location1,location2,passenger,CarType::COMFORT);
 
-    Output::printInfoAboutOrder(order);
+
+    list<Order> orders = System::getListOfAllOrders();
+
+    for(Order& order: orders){
+        Output::printInfoAboutOrder(&order);
+    }
+
+
+
+
 
 
 

@@ -14,7 +14,7 @@ class Driver: public User {
     friend class DriverGateway;
 private:
     Car* car;
-    Driver(const string &name, const string &phoneNumber, const string &password);
+    Driver(const string &name, const string &phoneNumber, const string &password, Car* car);
 public:
 
 
@@ -24,6 +24,8 @@ public:
 
 
     Car *getCar() const;
+
+    Date getEndDate();
 
 };
 

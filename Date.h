@@ -27,11 +27,11 @@ static int daysInMonths[] = { // keep how many days in each month
 
 class Date {
 private:
-    int minutes;
-    int hours;
-    int day;
-    int month;
-    int year;
+    int minutes = 0;
+    int hours = 0;
+    int day = 0;
+    int month = 0;
+    int year = 0;
 public:
     Date() = default;
 
@@ -45,7 +45,11 @@ public:
      */
     Date operator+(int termMinutes);
 
-    bool operator>(Date date) const;
+    bool operator>=(Date date) const;
+    bool operator<=(Date date) const;
+    bool operator!=(Date date) const;
+    Date& operator=(Date date);
+
 
     /**
      * Use ctime library to get present date
@@ -63,6 +67,7 @@ public:
 
     [[nodiscard]] int getYear() const;
 
+    bool isNull() const;
 };
 
 

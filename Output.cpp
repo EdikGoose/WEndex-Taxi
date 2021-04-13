@@ -12,11 +12,6 @@ void Output::printInfoAboutDate(const Date& date) {
 }
 
 void Output::printInfoAboutOrder(Order* const order) {
-
-    cout << "   Start location:\n    " << endl;
-
-
-
     cout << "Order number: " << order->getId() << endl;
 
     cout << "   Start location:\n    ";
@@ -81,5 +76,10 @@ void Output::printInfoAboutDriver(const Driver *driver) {
 void Output::printCondition(int price, int duration) {
     cout << "Do you agree with this condition:\n  Cost: " << price << " rubles . Duration: " << duration << " minutes" << endl;
     cout << "Answer yes, if you agree" << endl;
+}
+
+void Output::printMessageAboutAbsence() {
+    cout << "Unfortunately, there are no free drivers yet. Wait some seconds" << endl;
+
 }
 

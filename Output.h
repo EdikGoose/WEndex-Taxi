@@ -32,6 +32,7 @@ public:
 
     static void printCondition(int price, int duration);
 
+    static void printMessageAboutAbsence();
 
 };
 

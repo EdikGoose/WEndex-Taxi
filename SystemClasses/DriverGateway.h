@@ -12,7 +12,7 @@ class DriverGateway {
     friend class System;
 private:
     static inline list<Driver> listOfDrivers = {};
-    static Driver* addDriver(const string &name, const string &phoneNumber, const string &password);
+    static Driver* addDriver(const string &name, const string &phoneNumber, const string &password, Car* car);
 
 public:
     static list<Driver> &getListOfAllDrivers();

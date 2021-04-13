@@ -4,8 +4,8 @@
 
 #include "Driver.h"
 
-Driver::Driver(const string &name, const string &phoneNumber, const string &password) : User(name, phoneNumber,
-                                                                                             password) {}
+Driver::Driver(const string &name, const string &phoneNumber, const string &password, Car* car) : User(name, phoneNumber,
+                                                                                             password), car(car) {}
 
 void Driver::pinCar(Car *car) {
     this->car = car;
@@ -21,9 +21,17 @@ bool Driver::isReady(Date startDate) const {
     }
     Order lastOrder = *orderHistory.back();
 
-    if(startDate > lastOrder.getStartDate()){
+    if(startDate >= lastOrder.getStartDate() && startDate <= lastOrder.getEndDate()){
         return true;
     }
 
     return false;
+}
+
+Date Driver::getEndDate() {
+    if(orderHistory.empty()){
+        return Date::getCurrentDate();
+    }
+    return orderHistory.back()->getEndDate();
+
 }

@@ -62,8 +62,8 @@ Date Date::getCurrentDate() {
     return Date(now->tm_hour, now->tm_min, now->tm_mday, now->tm_mon, 1900+now->tm_year);
 }
 
-bool Date::operator>(Date date) const {
-    if(minutes + hours*60 + day*24*60 + month*daysInMonths[month-1]*24*60 + year*365*24*60 >
+bool Date::operator>=(Date date) const {
+    if(minutes + hours*60 + day*24*60 + month*daysInMonths[month-1]*24*60 + year*365*24*60 >=
     date.getMinutes()*60 + date.getDay()*24*60 + date.getMonth()*daysInMonths[date.getMonth()-1]*24*60 + date.getYear()*365*24*60){
         return true;
     }
@@ -72,4 +72,44 @@ bool Date::operator>(Date date) const {
     }
 
 }
+
+bool Date::operator<=(Date date) const {
+    if(minutes + hours*60 + day*24*60 + month*daysInMonths[month-1]*24*60 + year*365*24*60 <=
+       date.getMinutes()*60 + date.getDay()*24*60 + date.getMonth()*daysInMonths[date.getMonth()-1]*24*60 + date.getYear()*365*24*60){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+
+bool Date::isNull() const{
+    if(minutes == 0 && hours == 0 && day == 0 && month == 0 && year == 0){
+        return true;
+    }
+    return false;
+}
+
+bool Date::operator!=(Date date) const {
+    if(minutes + hours*60 + day*24*60 + month*daysInMonths[month-1]*24*60 + year*365*24*60 ==
+       date.getMinutes()*60 + date.getDay()*24*60 + date.getMonth()*daysInMonths[date.getMonth()-1]*24*60 + date.getYear()*365*24*60){
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+Date& Date::operator=(Date date) {
+    minutes = date.getMinutes();
+    hours = date.getHours();
+    day = date.getDay();
+    month = date.getDay();
+    year = date.getYear();
+    return *this;
+}
+
+
 
