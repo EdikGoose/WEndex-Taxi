@@ -9,9 +9,19 @@
 #include "Car.h"
 #include "ComfortPlusCar.h"
 
+
 class BusinessCar: public ComfortPlusCar {
     CarType getType() override;
     void parkRightInFrontOfTheEntrance();
+    friend class CarGateway;
+protected:
+    BusinessCar();
+
+public:
+    BusinessCar(const string &model, const string &color, const string &number);
+
+private:
+    int getRate() override;
 };
 
 

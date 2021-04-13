@@ -4,8 +4,8 @@
 
 #include "Order.h"
 
-Order::Order(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,
-             Passenger *passenger, Driver *driver, int cost, int distance) : startDate(startDate), endTime(endTime),
+Order::Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
+             Passenger *passenger, Driver *driver, int cost, int distance) : startDate(startDate), endDate(endDate),
                                                                              startLocation(startLocation),
                                                                              endLocation(endLocation),
                                                                              passenger(passenger), driver(driver),

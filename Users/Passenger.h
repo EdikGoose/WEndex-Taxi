@@ -9,16 +9,21 @@
 #include "User.h"
 #include "../Payment/Card.h"
 #include "../Payment/PaymentMethod.h"
+#include "../SystemClasses/PassengerGateway.h"
 #include "../Location.h"
+#include "../Cars/CarType.h"
 
 class Passenger : public User {
+    friend class PassengerGateway; // it is friend class because with his help we will create Passenger objects
+
 private:
     PaymentMethod paymentMethod;
+
     list<Card> listOfCards;
     list<Location> pinnedAddresses;
-public:
-    Passenger(const string &name, const string &phoneNumber, const string &password);
 
+    Passenger(const string &name, const string &phoneNumber, const string &password); // private constructor
+public:
     void addPinnedAddress(const Location& location);
 
     void addCard(const Card& card);

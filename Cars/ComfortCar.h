@@ -9,17 +9,23 @@
 #include "Car.h"
 
 class ComfortCar: public Car {
+    friend class CarGateway;
 private:
     int freeBottleOfWater;
 
-public:
+protected:
     ComfortCar(const string &model, const string &color, const string &number);
 
+    ComfortCar();
+
+public:
     void decreaseBottles();
 
     [[nodiscard]] int getFreeBottleOfWater() const;
 
     CarType getType() override;
+
+    int getRate() override;
 };
 
 

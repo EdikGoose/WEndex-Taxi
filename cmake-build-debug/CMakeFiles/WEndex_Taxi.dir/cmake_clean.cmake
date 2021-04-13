@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj"
+  "CMakeFiles/WEndex_Taxi.dir/SystemClasses/CarGateway.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj"

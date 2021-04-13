@@ -15,3 +15,11 @@ double User::getRating() const {
 const string &User::getPhoneNumber() const {
     return phoneNumber;
 }
+
+void User::addOrder(Order* order) {
+    orderHistory.push_back(order);
+}
+
+const list<Order *> &User::getOrderHistory() const {
+    return orderHistory;
+}

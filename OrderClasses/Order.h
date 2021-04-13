@@ -16,7 +16,7 @@ class Driver;
 class Order {
 private:
     Date startDate;
-    Date endTime;
+    Date endDate;
 
     Location startLocation;
     Location endLocation;
@@ -31,7 +31,7 @@ private:
     static inline int commonId = 0; // to track number of order
     int id;
 public:
-    Order(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,
+    Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
           Passenger *passenger, Driver *driver, int cost, int distance);
 
 
@@ -40,7 +40,7 @@ public:
     }
 
     [[nodiscard]] const Date &getEndTime() const {
-        return endTime;
+        return endDate;
     }
 
     [[nodiscard]] const Location &getStartLocation() const {

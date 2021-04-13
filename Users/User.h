@@ -18,7 +18,7 @@ protected:
     double rating = 0;
     string phoneNumber;
     string password;
-    list<Order> orderHistory;
+    list<Order*> orderHistory;
 public:
     User(string name, string phoneNumber, string password) : name(move(name)),phoneNumber(move(phoneNumber)),
                                                                                                  password(move(password)) {}
@@ -27,6 +27,10 @@ public:
     [[nodiscard]] double getRating() const;
 
     [[nodiscard]] const string &getPhoneNumber() const;
+
+    void addOrder(Order* order);
+
+    const list<Order *> &getOrderHistory() const;
 
 };
 

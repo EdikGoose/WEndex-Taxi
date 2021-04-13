@@ -8,14 +8,21 @@
 
 #include "User.h"
 #include "../Cars/Car.h"
+#include "../SystemClasses/DriverGateway.h"
 
 class Driver: public User {
+    friend class DriverGateway;
 private:
     Car* car;
-public:
     Driver(const string &name, const string &phoneNumber, const string &password);
+public:
+
+    bool isReady(Date startDate);
 
     void pinCar(Car* car);
+
+
+    Car *getCar() const;
 
 };
 

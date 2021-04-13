@@ -11,6 +11,12 @@
 
 class ComfortPlusCar: ComfortCar {
     CarType getType() override;
+
+    int getRate() override;
+
+    friend class CarGateway;
+protected:
+    ComfortPlusCar(const string &model, const string &color, const string &number);
 };
 
 

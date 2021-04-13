@@ -6,6 +6,7 @@
 #define WENDEX_TAXI_LOCATION_H
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -33,6 +34,8 @@ public:
     [[nodiscard]] int getCoordinateY() const;
 
     [[nodiscard]] const string &getAddress() const;
+
+    static int getDistance(const Location& from, const Location& to);
 
 private:
     /**

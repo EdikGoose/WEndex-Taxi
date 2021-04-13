@@ -32,5 +32,11 @@ const string &Location::getAddress() const {
     return address;
 }
 
+int Location::getDistance(const Location &from, const Location &to) {
+    return sqrt((from.getCoordinateX() - to.getCoordinateX()) * (from.getCoordinateX() - to.getCoordinateX())
+                + (from.getCoordinateY() - to.getCoordinateY()) * (from.getCoordinateY() - to.getCoordinateY()));
+
+}
+
 
 

@@ -6,8 +6,17 @@
 #define WENDEX_TAXI_DRIVERGATEWAY_H
 
 
-class DriverGateway {
+#include "../Users/Driver.h"
 
+class DriverGateway {
+    friend class System;
+private:
+    static inline list<Driver> listOfDrivers = {};
+    static Driver* addDriver(const string &name, const string &phoneNumber, const string &password);
+
+public:
+    static const list<Driver> &getListOfAllDrivers();
+    static void addOrder(Driver* driver, Order* order);
 };
 
 

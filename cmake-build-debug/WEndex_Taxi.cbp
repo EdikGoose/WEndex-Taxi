@@ -146,6 +146,12 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>

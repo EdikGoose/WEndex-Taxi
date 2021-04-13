@@ -3,9 +3,13 @@
 //
 
 #include "Passenger.h"
+#include "../Cars/CarType.h"
+#include "../SystemClasses/DriverGateway.h"
 
 Passenger::Passenger(const string &name, const string &phoneNumber, const string &password) : User(name, phoneNumber,
-                                                                                                   password) {}
+                                                                                                   password) {
+    paymentMethod = PaymentMethod::CARD;
+}
 
 void Passenger::addPinnedAddress(const Location &location) {
     pinnedAddresses.push_back(location);
@@ -15,3 +19,4 @@ void Passenger::addPinnedAddress(const Location &location) {
 void Passenger::addCard(const Card &card) {
     listOfCards.push_back(card);
 }
+

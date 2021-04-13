@@ -11,6 +11,14 @@
 class EconomyCar: public Car{
     CarType getType() override;
 
+public:
+    int getRate() override;
+
+private:
+    friend class CarGateway;
+
+protected:
+    EconomyCar(const string &model, const string &color, const string &number);
 };
 
 

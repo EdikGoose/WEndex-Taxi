@@ -19,3 +19,9 @@ void ComfortCar::decreaseBottles() {
 int ComfortCar::getFreeBottleOfWater() const {
     return freeBottleOfWater;
 }
+
+ComfortCar::ComfortCar() {}
+
+int ComfortCar::getRate() {
+    return 30;
+}

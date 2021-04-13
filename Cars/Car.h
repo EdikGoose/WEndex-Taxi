@@ -14,19 +14,26 @@
 using namespace std;
 
 /**
- * Abstract class with pure virtual method getType()
+ * Abstract class with pure virtual methods getType() and getRate()
  */
 class Car {
+    friend class CarGateway;
 protected:
     string model;
     Location location;
     string color;
     string number; // number looks like : a065ac
 
+
+    Car() = default;
+    Car(string model, string color, string number);
+
 public:
     virtual CarType getType() = 0;
 
-    Car(string model, string color, string number);
+    virtual int getRate() = 0;
+
+
 
     void setLocation(const Location &location);
 

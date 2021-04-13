@@ -12,3 +12,12 @@ CarType BusinessCar::getType() {
 void BusinessCar::parkRightInFrontOfTheEntrance() {
     cout << "Car parked right in front of the entrance";
 }
+
+
+
+BusinessCar::BusinessCar(const string &model, const string &color, const string &number) : ComfortPlusCar(model, color,
+                                                                                                          number) {}
+
+int BusinessCar::getRate() {
+    return 50;
+}

@@ -7,3 +7,9 @@
 CarType EconomyCar::getType() {
     return CarType::ECONOMY;
 }
+
+EconomyCar::EconomyCar(const string &model, const string &color, const string &number) : Car(model, color, number) {}
+
+int EconomyCar::getRate() {
+    return 20;
+}

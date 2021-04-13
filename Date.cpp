@@ -61,3 +61,15 @@ Date Date::getCurrentDate() {
     tm* now = std::localtime(&t);
     return Date(now->tm_hour, now->tm_min, now->tm_mday, now->tm_mon, 1900+now->tm_year);
 }
+
+bool Date::operator>(Date date) const {
+    if(minutes + hours*60 + day*24*60 + month*daysInMonths[month-1]*24*60 + year*365*24*60 >
+    date.getMinutes()*60 + date.getDay()*24*60 + date.getMonth()*daysInMonths[date.getMonth()-1]*24*60 + date.getYear()*365*24*60){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+

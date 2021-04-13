@@ -10,3 +10,20 @@ Driver::Driver(const string &name, const string &phoneNumber, const string &pass
 void Driver::pinCar(Car *car) {
     this->car = car;
 }
+
+Car *Driver::getCar() const {
+    return car;
+}
+
+bool Driver::isReady(Date startDate) {
+    if(orderHistory.empty()){
+        return true;
+    }
+    Order lastOrder = *orderHistory.back();
+
+    if(startDate > lastOrder.getStartDate()){
+        return true;
+    }
+
+    return false;
+}

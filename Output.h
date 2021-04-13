@@ -9,6 +9,8 @@
 #include "Date.h"
 #include "OrderClasses/Order.h"
 #include "Users/User.h"
+#include "Users/Driver.h"
+#include "Cars/Car.h"
 
 
 /**
@@ -18,11 +20,19 @@ class Output {
 public:
     static void printInfoAboutDate(const Date& date);
 
-    static void printInfoAboutOrder(const Order& order);
+    static void printInfoAboutOrder(Order* order);
 
-    static void printInfoAboutUser(User* user);
+
+    static void printInfoAboutDriver(Driver* driver);
+    static void printInfoAboutPassenger(Passenger *passenger);
+
+    static void printInfoAboutCar(Car* car);
 
     static void printInfoAboutLocation(const Location& location);
+
+    static void printCondition(int price, int duration);
+
+
 };
 
 

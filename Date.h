@@ -45,6 +45,8 @@ public:
      */
     Date operator+(int termMinutes);
 
+    bool operator>(Date date) const;
+
     /**
      * Use ctime library to get present date
      */
