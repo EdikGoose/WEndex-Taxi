@@ -3,6 +3,7 @@
 //
 
 #include "User.h"
+#include "../DB_Helper.h"
 
 const string &User::getName() const {
     return name;

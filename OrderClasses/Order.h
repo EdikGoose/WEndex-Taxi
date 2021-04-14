@@ -29,7 +29,7 @@ private:
     int cost;
     int distance; // km
     static inline int commonId = 0; // to track number of order
-    int id;
+    int id = -1;
 public:
     Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
           Passenger *passenger, const Driver *driver, int cost, int distance);
@@ -53,7 +53,9 @@ public:
 
     int getId() const;
 
+    void setId(int id);
 
+    static void setCommonId(int commonId);
 };
 
 

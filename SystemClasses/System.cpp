@@ -14,15 +14,21 @@
 
 
 Passenger* System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
-    return PassengerGateway::addPassenger(name,phoneNumber,password);
+    Passenger* refToNewPassenger = PassengerGateway::addPassenger(name, phoneNumber, password);
+    DB_Helper::writeListOfPassenger(); // update BD
+    return refToNewPassenger;
 }
 
 Driver* System::registerDriver(const string &name, const string &phoneNumber, const string &password, Car* car) {
-    return DriverGateway::addDriver(name,phoneNumber,password, car);
+    Driver* refToNewDriver = DriverGateway::addDriver(name,phoneNumber,password, car);
+    DB_Helper::writeListOfDrivers();
+    return refToNewDriver;
 }
 
 Car* System::registerCar(const string& model, const string& color, const string& number, CarType carType) {
-    return CarGateway::addCar(model,color,number,carType);
+    Car* refToNewCar = CarGateway::addCar(model,color,number,carType);
+    DB_Helper::writeListOfCars();
+    return refToNewCar;
 }
 
 const list<Order> &System::getListOfAllOrders() {
@@ -46,6 +52,9 @@ Order* System::preOrder(const Location &startLocation, const Location &endLocati
             if(answer == "Yes"){
                 return makeOrder(startDate,endDate,startLocation,endLocation,passenger,&driver,cost,distance);
             }
+            else{
+                return nullptr;
+            }
         }
     }
     Output::printMessageAboutAbsence();
@@ -63,14 +72,17 @@ Order* System::makeOrder(const Date &startDate, const Date &endDate, const Locat
     DriverGateway::addOrder(driver,&listOfAllOrders.back());
 
 
+    // Random decreasing number of bottles
     if(driver->getCar()->getType() > CarType::ECONOMY){
-        dynamic_cast<ComfortCar*>(driver->getCar())->decreaseBottles();
+        dynamic_cast<ComfortCar*>(driver->getCar())->decreaseBottles(); // safe cast
     }
+
+    DB_Helper::writeListOfOrders();
 
     return &listOfAllOrders.back();
 }
 
-const Order *System::findById(int id) {
+const Order *System::findOrderById(int id) {
     for(const Order& order: listOfAllOrders){
         if(order.getId() == id){
             return &order;

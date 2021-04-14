@@ -8,34 +8,66 @@
 
 
 list<Order> DB_Helper::readListOfOrders() {
+    list<Order> listOfOrders;
     readListOfCars();
     readListOfDrivers();
     readListOfPassenger();
 
-    ifstream OrdersFile ("DBs/CarsDB");
+    ifstream OrdersFile ("../DBs/OrdersDB");
     string line;
     if (OrdersFile.is_open())
     {
         while (getline (OrdersFile, line))
         {
-            // min1 hour1 day1 month1 year1  min2 hour2 day2 month2 year2  coordX coordY coordX coordY phonePassenger phoneDriver
+            // id min1 hour1 day1 month1 year1  min2 hour2 day2 month2 year2  coordX coordY coordX coordY phonePassenger phoneDriver
             if(line.empty())break;
             vector<string> info = divideIntoWords(line);
-            Date startDate(stoi(info[0]),stoi(info[1]),stoi(info[2]),stoi(info[3]), stoi(info[4]));
-            Date endDate(stoi(info[5]),stoi(info[6]),stoi(info[7]),stoi(info[8]), stoi(info[9]));
+            int id = stoi(info[0]);
+            Date startDate(stoi(info[2]),stoi(info[1]),stoi(info[3]),stoi(info[4]), stoi(info[5]));
+            Date endDate(stoi(info[7]),stoi(info[6]),stoi(info[8]),stoi(info[9]), stoi(info[10]));
 
-            Location startLocation(stoi(info[10]),stoi(info[11]));
-            Location endLocation(stoi(info[12]),stoi(info[13]));
+            Location startLocation(stoi(info[11]),stoi(info[12]));
+            Location endLocation(stoi(info[13]),stoi(info[14]));
 
-            string phonePassenger = info[14];
+            string phonePassenger = info[15];
             Passenger* passenger = PassengerGateway::findByPhoneNumber(phonePassenger);
 
-            string phoneDriver = info[15];
+            string phoneDriver = info[16];
             Driver* driver = DriverGateway::findByPhoneNumber(phoneDriver);
             int distance = Location::getDistance(startLocation, endLocation) * 100;
             int cost = (distance * driver->getCar()->getRate()) / 1000;
 
+            Order order(startDate, endDate, startLocation, endLocation, passenger,driver,cost,distance);
+            order.setId(id);
+            Order::setCommonId(id); // the last order will be have the latest ID
 
+            listOfOrders.push_back(order);
+
+            PassengerGateway::addOrderToPassengerById(passenger, &listOfOrders.back()); // adding read order to passengers
+            DriverGateway::addOrderToDriverById(driver, &listOfOrders.back()); // adding read order to driver
+        }
+        OrdersFile.close();
+        return listOfOrders;
+    }
+    else{
+        cout << "Problems with opening file";
+        return list<Order>();
+    }
+}
+
+void DB_Helper::writeListOfOrders() {
+    ofstream OrdersFile("../DBs/OrdersDB");
+    string line;
+    if(OrdersFile.is_open()){
+        list<Order> listOfOrder = System::getListOfAllOrders();
+        for(const Order& order: listOfOrder){
+            // min1 hour1 day1 month1 year1  min2 hour2 day2 month2 year2  coordX coordY coordX coordY phonePassenger phoneDriver
+            OrdersFile << order.getId() << " " << order.getStartDate().getMinutes() << " " << order.getStartDate().getHours() << " " <<
+                    order.getStartDate().getDay() << " " << order.getStartDate().getMonth() << " " << order.getStartDate().getYear() << " " <<
+                    order.getEndDate().getMinutes() << " " << order.getEndDate().getHours() << " " << order.getEndDate().getDay() << " " <<
+                    order.getEndDate().getMonth()  << " " << order.getEndDate().getYear() << " " << order.getStartLocation().getCoordinateX()  << " " <<
+                    order.getStartLocation().getCoordinateY()  << " " << order.getEndLocation().getCoordinateX()  << " " <<
+                    order.getEndLocation().getCoordinateY() << " " << order.getPassenger()->getPhoneNumber()  << " " << order.getDriver()->getPhoneNumber() << "\n";
 
         }
         OrdersFile.close();
@@ -45,13 +77,9 @@ list<Order> DB_Helper::readListOfOrders() {
     }
 }
 
-void DB_Helper::writeListOfOrders(const Order &order) {
-
-}
-
 
 void  DB_Helper::readListOfCars() {
-    ifstream CarsFile ("DBs/CarsDB");
+    ifstream CarsFile ("../DBs/CarsDB");
     string line;
     if (CarsFile.is_open())
     {
@@ -72,12 +100,21 @@ void  DB_Helper::readListOfCars() {
     }
 }
 
-void DB_Helper::writeListOfCars(const Car& car) {
-    ofstream CarsFile ("DBs/CarsDB",ios_base::app);
+void DB_Helper::writeListOfCars() {
+    //ofstream CarsFile ("DBs/CarsDB",ios_base::app);
+    ofstream CarsFile ("../DBs/CarsDB");
     string line;
     if (CarsFile.is_open())
     {
-        CarsFile << car.getNumber() << " " << car.getModel() << " " << car.getColor() << " " << Car::carTypeToString(car.getType()) << endl;
+        for(Car& car: CarGateway::getListOfEconomy())
+            CarsFile << car.getNumber() << " " << car.getModel() << " " << car.getColor() << " " << Car::carTypeToString(car.getType()) << endl;
+        for(Car& car: CarGateway::getListOfComfort())
+            CarsFile << car.getNumber() << " " << car.getModel() << " " << car.getColor() << " " << Car::carTypeToString(car.getType()) << endl;
+        for(Car& car: CarGateway::getListOfComfortPlus())
+            CarsFile << car.getNumber() << " " << car.getModel() << " " << car.getColor() << " " << Car::carTypeToString(car.getType()) << endl;
+        for(Car& car: CarGateway::getListOfBusiness())
+            CarsFile << car.getNumber() << " " << car.getModel() << " " << car.getColor() << " " << Car::carTypeToString(car.getType()) << endl;
+
     }
     else{
         cout << "Problems with opening file";
@@ -88,10 +125,8 @@ void DB_Helper::writeListOfCars(const Car& car) {
 
 
 void DB_Helper::readListOfDrivers() {
-    ifstream DriversFile ("DBs/DriversDB");
+    ifstream DriversFile ("../DBs/DriversDB");
     string line;
-    getline (DriversFile, line); // do not know why, but it put 2 linebreaks on the start
-    getline (DriversFile, line);
     if (DriversFile.is_open())
     {
         while (getline (DriversFile, line))
@@ -107,10 +142,9 @@ void DB_Helper::readListOfDrivers() {
 
             Driver* driver = DriverGateway::addDriver(name,phoneNumber,password,refToCar);
 
-            string orders;
-            getline(DriversFile, orders);
-            vector<int> idOfOrders = divideIntoNumbers(orders);
-            for(int& id: idOfOrders){
+            getline(DriversFile, line);
+            vector<int> idOfOrders = divideIntoNumbers(line);
+            for(int id: idOfOrders){
                 driver->addIdOfOrder(id);
             }
 
@@ -123,15 +157,15 @@ void DB_Helper::readListOfDrivers() {
 }
 
 void DB_Helper::writeListOfDrivers() {
-    ofstream DriversFile ("DBs/DriversDB");
+    ofstream DriversFile ("../DBs/DriversDB");
     if (DriversFile.is_open())
     {
         list<Driver> listOfDrivers = DriverGateway::getListOfAllDrivers();
         for(Driver& driver: listOfDrivers) {
             DriversFile << driver.getName() << " " << driver.getPhoneNumber() << " " << driver.getPassword() << " "
                         << driver.getCar()->getNumber() << "\n";
-            for (const Order *order: driver.getOrderHistory()) {
-                DriversFile << order->getId() << " ";
+            for (int id: driver.getOrderHistoryId()) {
+                DriversFile << id << " ";
             }
             DriversFile << " " << "\n";
         }
@@ -145,7 +179,7 @@ void DB_Helper::writeListOfDrivers() {
 
 
 void DB_Helper::readListOfPassenger() {
-    ifstream DriversFile ("DBs/PassengersDB");
+    ifstream DriversFile ("../DBs/PassengersDB");
     string line;
     if (DriversFile.is_open())
     {
@@ -163,8 +197,8 @@ void DB_Helper::readListOfPassenger() {
             string orders;
             getline(DriversFile, orders);
             vector<int> idOfOrders = divideIntoNumbers(orders);
-            for(int& id: idOfOrders){
-                passenger->addIdOfOrder(id);
+            for(int id: idOfOrders){
+                passenger->addIdOfOrder(id); // reading only id because orders are not read
             }
 
         }
@@ -176,15 +210,15 @@ void DB_Helper::readListOfPassenger() {
 }
 
 void DB_Helper::writeListOfPassenger() {
-    ofstream PassengerFile ("DBs/PassengersDB");
+    ofstream PassengerFile ("../DBs/PassengersDB");
     if (PassengerFile.is_open())
     {
         list<Passenger> listOfPassenger = PassengerGateway::getListOfAllPassengers();
         for(Passenger& passenger:listOfPassenger) {
             PassengerFile << passenger.getName() << " " << passenger.getPhoneNumber() << " " << passenger.getPassword()
                           << "\n";
-            for (const Order *order: passenger.getOrderHistory()) {
-                PassengerFile << order->getId() << " ";
+            for (int id: passenger.getOrderHistoryId()) {
+                PassengerFile << id << " ";
             }
             PassengerFile << " " << "\n";
         }

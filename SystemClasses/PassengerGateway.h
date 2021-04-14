@@ -22,6 +22,13 @@ public:
     static void addOrder(Passenger* passenger, Order* order);
 
     static Passenger* findByPhoneNumber(const string& phoneNumber);
+
+    /**
+     * Specific method for DB work
+     * @param passenger
+     * @param order
+     */
+    static void addOrderToPassengerById(Passenger* passenger, Order* order);
 };
 
 

@@ -3,6 +3,7 @@
 //
 
 #include "DriverGateway.h"
+#include "../DB_Helper.h"
 
 Driver* DriverGateway::addDriver(const string &name, const string &phoneNumber, const string &password, Car* car) {
     Driver driver(name, phoneNumber, password, car);
@@ -16,6 +17,8 @@ list<Driver> &DriverGateway::getListOfAllDrivers() {
 
 void DriverGateway::addOrder(Driver *driver, Order *order) {
     driver->addOrder(order);
+    driver->addIdOfOrder(order->getId());
+    DB_Helper::writeListOfDrivers();
 }
 
 Driver *DriverGateway::findByPhoneNumber(const string& phoneNumber) {
@@ -24,4 +27,12 @@ Driver *DriverGateway::findByPhoneNumber(const string& phoneNumber) {
             return &driver;
     }
     return nullptr;
+}
+
+void DriverGateway::addOrderToDriverById(Driver *driver, Order *order) {
+    for(int idOfOrder: driver->getOrderHistoryId()){
+        if(idOfOrder == order->getId()){
+            driver->addOrder(order);
+        }
+    }
 }

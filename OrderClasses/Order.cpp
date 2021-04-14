@@ -47,4 +47,14 @@ int Order::getDistance() const {
 
 int Order::getId() const {
     return id;
+}
+
+void Order::setId(int id) {
+    if(this->id == -1){
+        this->id = id;
+    }
+}
+
+void Order::setCommonId(int commonId) {
+    Order::commonId = commonId;
 };

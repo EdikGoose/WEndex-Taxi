@@ -17,7 +17,7 @@ using namespace std;
 
 class System {
 private:
-    static inline list<Order> listOfAllOrders = {};
+    static inline list<Order> listOfAllOrders = DB_Helper::readListOfOrders(); // read date from DB
 
 public:
     static Passenger* registerPassenger(const string& name, const string& phoneNumber, const string& password);
@@ -30,7 +30,7 @@ public:
 
     static const list<Order> &getListOfAllOrders();
 
-    static const Order* findById(int id);
+    static const Order* findOrderById(int id);
 
 private:
     static Order* makeOrder(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,

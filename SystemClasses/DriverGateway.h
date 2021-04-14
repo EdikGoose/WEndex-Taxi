@@ -22,6 +22,14 @@ public:
 
 
     static Driver* findByPhoneNumber(const string& PhoneNumber);
+
+    /**
+     * Specific method for DB work
+     * @param driver
+     * @param order
+     */
+    static void addOrderToDriverById(Driver* driver, Order* order);
+
 };
 
 

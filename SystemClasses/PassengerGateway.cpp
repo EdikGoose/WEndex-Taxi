@@ -3,7 +3,7 @@
 //
 
 #include "PassengerGateway.h"
-
+#include "../DB_Helper.h"
 
 
 Passenger* PassengerGateway::addPassenger(const string &name, const string &phoneNumber, const string &password) {
@@ -12,12 +12,14 @@ Passenger* PassengerGateway::addPassenger(const string &name, const string &phon
 
 }
 
-const list<Passenger> &PassengerGateway::getListOfAllPassengers() {
+list<Passenger> &PassengerGateway::getListOfAllPassengers() {
     return listOfPassengers;
 }
 
 void PassengerGateway::addOrder(Passenger *passenger, Order *order) {
     passenger->addOrder(order);
+    passenger->addIdOfOrder(order->getId());
+    DB_Helper::writeListOfPassenger();
 }
 
 Passenger *PassengerGateway::findByPhoneNumber(const string& phoneNumber) {
@@ -27,3 +29,14 @@ Passenger *PassengerGateway::findByPhoneNumber(const string& phoneNumber) {
     }
     return nullptr;
 }
+
+void PassengerGateway::addOrderToPassengerById(Passenger *passenger, Order *order) {
+    for(int idOfOrder: passenger->getOrderHistoryId()){
+        if(idOfOrder == order->getId()){
+            passenger->addOrder(order);
+        }
+    }
+}
+
+
+

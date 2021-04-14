@@ -20,7 +20,7 @@ class DB_Helper {
 public:
     // min1 hour1 day1 month1 year1  min2 hour2 day2 month2 year2  coordX coordY coordX coordY phonePassenger phoneDriver
     static list<Order> readListOfOrders();
-    static void writeListOfOrders(const Order& order);
+    static void writeListOfOrders();
 
 
     // name phone password numberOfCar
@@ -38,7 +38,7 @@ public:
 
     //  number model color type
     static void readListOfCars();
-    static void writeListOfCars(const Car& car);
+    static void writeListOfCars();
 
 
 

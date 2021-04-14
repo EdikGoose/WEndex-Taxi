@@ -17,90 +17,51 @@ using namespace std;
 
 
 int main() {
-    Location location1(5,6);
-    Location location2(19,15);
+    srand((unsigned) time(nullptr)); // for unique random
 
-    DB_Helper::readListOfCars();
-    Car* car = System::registerCar("EDIK","BLACK","666",CarType::ECONOMY);
-    //DB_Helper::writeListOfCars(*car);
-    list<EconomyCar> listOfEconomy = CarGateway::getListOfEconomy();
-    for(EconomyCar economyCar:listOfEconomy){
-        Output::printInfoAboutCar(&economyCar);
+    //Initialize locations
+    Location startLocation(0,0);
+    Location endLocation(6,8);
+
+
+    /**
+     * Initially, in data base we info about one driver, one passenger, one car and one order
+     */
+
+    //Initialize all types of cars
+    Car* BusinessCar = System::registerCar("TESLA","RED","1AAA55",CarType::BUSINESS);
+    Car* EconomyCar = System::registerCar("LADA","BLACK","7ABC23",CarType::ECONOMY);
+    Car* ComfortCar = System::registerCar("RENO","WHITE","9JGC25",CarType::COMFORT);
+    Car* ComfortPlus = System::registerCar("HYUNDAI","GREEN","1KJE83",CarType::COMFORTPLUS);
+
+    //Initialize passengers
+    Passenger* passenger1 = System::registerPassenger("ZuevPassenger","+7927351398","13531");
+    Passenger* passenger2 = System::registerPassenger("MikePassenger","+7977456398","10531");
+
+    //Initialize drivers
+    System::registerDriver("ShilovDriver","+79348566923","13435",BusinessCar);
+    System::registerDriver("IvanovDriver","+79134593485","13435",EconomyCar);
+    System::registerDriver("RezaDriver","+79278345012","1536",ComfortCar);
+    System::registerDriver("KonyuhovDriver","+79123874589","5317",ComfortPlus);
+
+
+    //Do some orders. For do preOrder we need two locations, passenger which is doing the order, and needed type of car
+    System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS);
+    System::preOrder(startLocation, endLocation,passenger2, CarType::COMFORTPLUS);
+
+    System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be rejected, because there are no free drivers
+
+    Date neededTime = Date::getCurrentDate()+2; // wait 2 minutes before driver end the order
+    while(Date::getCurrentDate()<=neededTime);
+
+    System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be confirmed
+
+
+    //print all checks of orders
+    list<Order> listOfOrder = System::getListOfAllOrders();
+    for(Order& order: listOfOrder){
+        Output::printCheckOfOrder(&order);
     }
-    list<BusinessCar> listOfBusiness = CarGateway::getListOfBusiness();
-    for(BusinessCar businessCar:listOfBusiness){
-        Output::printInfoAboutCar(&businessCar);
-    }
-
-    Driver* driver = System::registerDriver("Iskan","1452456","1354",car);
-
-
-    Passenger* passenger = System::registerPassenger("MikePassenger", "+79273","12345");
-
-
-
-    System::preOrder(location1,location2,passenger,CarType::ECONOMY);
-
-    DB_Helper::readListOfDrivers();
-    list<Driver> listOfDriver = DriverGateway::getListOfAllDrivers();
-    for(const Driver& driver1: listOfDriver){
-        Output::printInfoAboutDriver(&driver1);
-        for(int id: driver1.getOrderHistoryId()){
-            cout << id << " ";
-        }
-    }
-
-
-    DB_Helper::writeListOfPassenger();
-    DB_Helper::writeListOfDrivers();
-
-
-    DB_Helper::readListOfPassenger();
-    list<Passenger> listOfPassengers = PassengerGateway::getListOfAllPassengers();
-    for(const Passenger& passenger1: listOfPassengers){
-        Output::printInfoAboutPassenger(&passenger1);
-        for(int id: passenger1.getOrderHistoryId()){
-            cout << id << " ";
-        }
-    }
-    // доделать читку ордеров и тестить
-
-
-    //DB_Helper::readListOfDrivers();
-   /* srand((unsigned) time(nullptr)); // for unique random
-
-    Location location1(5,6);
-    Location location2(19,15);
-    Location location3(41,10);
-
-    Car* comfortCar1 = System::registerCar("LADA", "RED", "a355c", CarType::COMFORT);
-    Car* comfortCar2 = System::registerCar("BMW", "BLUE", "a355c", CarType::ECONOMY);
-
-
-    System::registerDriver("Mike","891385","135df", comfortCar1);
-    //System::registerDriver("Zuev","891385","135df", comfortCar2);
-    Passenger* passenger = System::registerPassenger("Eduard","13524","135f");
-
-
-    System::preOrder(location1,location2,passenger,CarType::COMFORT);
-
-    System::preOrder(location1,location2,passenger,CarType::COMFORT);
-
-    int minutes = 25; // minutes in current time + 2min. It is needed for testing program
-
-    while(Date::getCurrentDate().getMinutes()<36); // my minGW compiler does not have thread because I artificially wait 1 minute
-
-    System::preOrder(location1,location2,passenger,CarType::COMFORT);
-
-
-    list<Order> orders = System::getListOfAllOrders();
-
-    for(Order& order: orders){
-        Output::printInfoAboutOrder(&order);
-    }
-
-*/
-
 
     return 0;
 }

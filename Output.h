@@ -20,7 +20,7 @@ class Output {
 public:
     static void printInfoAboutDate(const Date& date);
 
-    static void printInfoAboutOrder(Order* order);
+    static void printCheckOfOrder(Order *const order);
 
 
     static void printInfoAboutDriver(const Driver* driver);

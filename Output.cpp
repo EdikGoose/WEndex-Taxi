@@ -11,7 +11,8 @@ void Output::printInfoAboutDate(const Date& date) {
 
 }
 
-void Output::printInfoAboutOrder(Order* const order) {
+void Output::printCheckOfOrder(Order* const order) {
+    cout << "-----------CHECK-----------\n";
     cout << "Order number: " << order->getId() << endl;
 
     cout << "   Start location:\n    ";
@@ -50,16 +51,16 @@ void Output::printInfoAboutLocation(const Location &location) {
 void Output::printInfoAboutCar(const Car *car) {
     switch (car->getType()) {
         case CarType::ECONOMY:
-            cout << "Type: economy. ";
+            cout << "Type: Economy. ";
             break;
         case CarType::COMFORT:
-            cout << "Type: comfort. ";
+            cout << "Type: Comfort. ";
             break;
         case CarType::COMFORTPLUS:
-            cout << "Type: comfort plus. ";
+            cout << "Type: Comfort plus. ";
             break;
         case CarType::BUSINESS:
-            cout << "Type: business. ";
+            cout << "Type: Business. ";
 
     }
     cout << "Model: " << car->getModel() << ". Number: " << car->getNumber() << ". Color: " << car->getColor() << endl;
@@ -75,7 +76,7 @@ void Output::printInfoAboutDriver(const Driver *driver) {
 
 void Output::printCondition(int price, int duration) {
     cout << "Do you agree with this condition:\n  Cost: " << price << " rubles . Duration: " << duration << " minutes" << endl;
-    cout << "Answer yes, if you agree" << endl;
+    cout << "Answer Yes, if you agree" << endl;
 }
 
 void Output::printMessageAboutAbsence() {
