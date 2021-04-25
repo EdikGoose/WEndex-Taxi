@@ -547,6 +547,33 @@ SystemClasses/System.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.s
 .PHONY : SystemClasses/System.cpp.s
 
+Users/Admin.obj: Users/Admin.cpp.obj
+
+.PHONY : Users/Admin.obj
+
+# target to build an object file
+Users/Admin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj
+.PHONY : Users/Admin.cpp.obj
+
+Users/Admin.i: Users/Admin.cpp.i
+
+.PHONY : Users/Admin.i
+
+# target to preprocess a source file
+Users/Admin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.i
+.PHONY : Users/Admin.cpp.i
+
+Users/Admin.s: Users/Admin.cpp.s
+
+.PHONY : Users/Admin.s
+
+# target to generate assembly for a file
+Users/Admin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.s
+.PHONY : Users/Admin.cpp.s
+
 Users/Driver.obj: Users/Driver.cpp.obj
 
 .PHONY : Users/Driver.obj
@@ -709,6 +736,9 @@ help:
 	@echo ... SystemClasses/System.obj
 	@echo ... SystemClasses/System.i
 	@echo ... SystemClasses/System.s
+	@echo ... Users/Admin.obj
+	@echo ... Users/Admin.i
+	@echo ... Users/Admin.s
 	@echo ... Users/Driver.obj
 	@echo ... Users/Driver.i
 	@echo ... Users/Driver.s

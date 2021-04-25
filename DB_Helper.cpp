@@ -34,10 +34,14 @@ list<Order> DB_Helper::readListOfOrders() {
 
             string phoneDriver = info[16];
             Driver* driver = DriverGateway::findByPhoneNumber(phoneDriver);
-            int distance = Location::getDistance(startLocation, endLocation) * 100;
-            int cost = (distance * driver->getCar()->getRate()) / 1000;
 
-            Order order(startDate, endDate, startLocation, endLocation, passenger,driver,cost,distance);
+            string carNumber = info[17];
+            Car* car = CarGateway::findCarByNumber(carNumber);
+
+            int distance = Location::getDistance(startLocation, endLocation) * 100;
+            int cost = (distance * car->getRate()) / 1000;
+
+            Order order(startDate, endDate, startLocation, endLocation, passenger,driver, car,cost,distance);
             order.setId(id);
             Order::setCommonId(id); // the last order will be have the latest ID
 
@@ -67,7 +71,7 @@ void DB_Helper::writeListOfOrders() {
                     order.getEndDate().getMinutes() << " " << order.getEndDate().getHours() << " " << order.getEndDate().getDay() << " " <<
                     order.getEndDate().getMonth()  << " " << order.getEndDate().getYear() << " " << order.getStartLocation().getCoordinateX()  << " " <<
                     order.getStartLocation().getCoordinateY()  << " " << order.getEndLocation().getCoordinateX()  << " " <<
-                    order.getEndLocation().getCoordinateY() << " " << order.getPassenger()->getPhoneNumber()  << " " << order.getDriver()->getPhoneNumber() << "\n";
+                    order.getEndLocation().getCoordinateY() << " " << order.getPassenger()->getPhoneNumber()  << " " << order.getDriver()->getPhoneNumber() << " " << order.getCar()->getNumber() << "\n";
 
         }
         OrdersFile.close();
@@ -132,22 +136,63 @@ void DB_Helper::readListOfDrivers() {
         while (getline (DriversFile, line))
         {
             if(line.empty())break;
-            vector<string> info = divideIntoWords(line);
-           // name phone password numberOfCar
-            string name = info[0];
-            string phoneNumber = info[1];
-            string password = info[2];
-            string numberOfCar = info[3];
-            Car* refToCar = CarGateway::findCarByNumber(numberOfCar);
+            string name, phoneNumber, password;
+            vector<int> idOfOrders;
+            vector<string> pinnedCarsId;
 
-            Driver* driver = DriverGateway::addDriver(name,phoneNumber,password,refToCar);
+            unsigned int indexOfLastSlash = 0;
+            unsigned int indexOfPreviousSlash = 0;
 
-            getline(DriversFile, line);
-            vector<int> idOfOrders = divideIntoNumbers(line);
-            for(int id: idOfOrders){
-                driver->addIdOfOrder(id);
+            while(indexOfLastSlash != line.length()-1) {
+                indexOfPreviousSlash = indexOfLastSlash;
+                indexOfLastSlash = line.find('/', indexOfLastSlash+1);
+
+                unsigned int indexOfFirstLetter = indexOfPreviousSlash+1;
+                unsigned int lengthOfWord = indexOfLastSlash - indexOfFirstLetter;
+
+
+                string info = line.substr(indexOfFirstLetter, lengthOfWord);
+                auto words = divideIntoWords(info);
+
+                if(info.find('{') != string::npos) {
+
+                    info.erase(info.begin(), info.begin() + info.find('{') + 1);
+                    info.erase(info.end() - 1);
+
+                    if(words[0] == "Orders") {
+                        vector<int> orders = divideIntoNumbers(info);
+                        for (auto orderId : orders) {
+                            idOfOrders.push_back(orderId);
+                        }
+                    }
+                    else if(words[0] == "Cars"){
+                        vector<string> cars = divideIntoWords(info);
+                        for(const auto& carId: cars){
+                            pinnedCarsId.push_back(carId);
+                        }
+                    }
+                }
+                else{
+                    if(words[0] == "Name"){
+                        name = words[1];
+                    }
+                    else if(words[0] == "Phone"){
+                        phoneNumber = words[1];
+                    }
+                    else if(words[0] == "Password"){
+                        password = words[1];
+                    }
+
+                }
             }
 
+            Driver* driver = DriverGateway::addDriver(name,phoneNumber,password);
+            for(const auto& carNumber: pinnedCarsId){
+                driver->pinCar(CarGateway::findCarByNumber(carNumber));
+            }
+            for(int id: idOfOrders){
+                driver->addIdOfOrder(id); // reading only id because orders are not read
+            }
         }
         DriversFile.close();
     }
@@ -162,12 +207,7 @@ void DB_Helper::writeListOfDrivers() {
     {
         list<Driver> listOfDrivers = DriverGateway::getListOfAllDrivers();
         for(Driver& driver: listOfDrivers) {
-            DriversFile << driver.getName() << " " << driver.getPhoneNumber() << " " << driver.getPassword() << " "
-                        << driver.getCar()->getNumber() << "\n";
-            for (int id: driver.getOrderHistoryId()) {
-                DriversFile << id << " ";
-            }
-            DriversFile << " " << "\n";
+            DriversFile << Driver::serialize(driver) << "\n";
         }
 
     }
@@ -179,30 +219,75 @@ void DB_Helper::writeListOfDrivers() {
 
 
 void DB_Helper::readListOfPassenger() {
-    ifstream DriversFile ("../DBs/PassengersDB");
+    ifstream PassengersFile ("../DBs/PassengersDB");
     string line;
-    if (DriversFile.is_open())
+    if (PassengersFile.is_open())
     {
-        while (getline (DriversFile, line))
+        while (getline (PassengersFile, line))
         {
             if(line.empty())break;
-            vector<string> info = divideIntoWords(line);
-            // name phone password numberOfCar
-            string name = info[0];
-            string phoneNumber = info[1];
-            string password = info[2];
+            string name, phoneNumber, password;
+            vector<int> idOfOrders;
+            vector<Location> pinnedLocations;
+
+            unsigned int indexOfLastSlash = 0;
+            unsigned int indexOfPreviousSlash = 0;
+
+            while(indexOfLastSlash != line.length()-1) {
+                indexOfPreviousSlash = indexOfLastSlash;
+                indexOfLastSlash = line.find('/', indexOfLastSlash+1);
+
+                unsigned int indexOfFirstLetter = indexOfPreviousSlash+1;
+                unsigned int lengthOfWord = indexOfLastSlash - indexOfFirstLetter;
+
+
+                string info = line.substr(indexOfFirstLetter, lengthOfWord);
+                auto words = divideIntoWords(info);
+
+                if(info.find('{') != string::npos){
+                    if(words[0] == "PinnedAddresses"){
+                        info.erase(info.begin(), info.begin() + info.find('{') + 1);
+                        info.erase(info.end() - 1);
+
+                        vector<string> locations = divideIntoWords(info);
+                        for (const auto& location : locations) {
+                            pinnedLocations.push_back(Location::deserialize(location));
+                        }
+                    }
+                    else {
+                        info.erase(info.begin(), info.begin() + info.find('{') + 1);
+                        info.erase(info.end() - 1);
+
+                        vector<int> orders = divideIntoNumbers(info);
+                        for (auto orderId : orders) {
+                           idOfOrders.push_back(orderId);
+                        }
+                    }
+                }
+                else{
+                    if(words[0] == "Name"){
+                        name = words[1];
+                    }
+                    else if(words[0] == "Phone"){
+                        phoneNumber = words[1];
+                    }
+                    else if(words[0] == "Password"){
+                        password = words[1];
+                    }
+
+                }
+            }
 
             Passenger* passenger = PassengerGateway::addPassenger(name,phoneNumber,password);
-
-            string orders;
-            getline(DriversFile, orders);
-            vector<int> idOfOrders = divideIntoNumbers(orders);
             for(int id: idOfOrders){
                 passenger->addIdOfOrder(id); // reading only id because orders are not read
             }
+            for(const auto& location: pinnedLocations){
+                passenger->addPinnedAddress(location);
+            }
 
         }
-        DriversFile.close();
+        PassengersFile.close();
     }
     else{
         cout << "Problems with opening file";
@@ -214,13 +299,8 @@ void DB_Helper::writeListOfPassenger() {
     if (PassengerFile.is_open())
     {
         list<Passenger> listOfPassenger = PassengerGateway::getListOfAllPassengers();
-        for(Passenger& passenger:listOfPassenger) {
-            PassengerFile << passenger.getName() << " " << passenger.getPhoneNumber() << " " << passenger.getPassword()
-                          << "\n";
-            for (int id: passenger.getOrderHistoryId()) {
-                PassengerFile << id << " ";
-            }
-            PassengerFile << " " << "\n";
+        for(const Passenger& passenger:listOfPassenger) {
+            PassengerFile << Passenger::serialize(passenger) << "\n";
         }
     }
     else{

@@ -3,17 +3,17 @@
 //
 
 #include "Driver.h"
+#include "../DB_Helper.h"
 
-Driver::Driver(const string &name, const string &phoneNumber, const string &password, Car* car) : User(name, phoneNumber,
-                                                                                             password), car(car) {}
+Driver::Driver(const string &name, const string &phoneNumber, const string &password) : User(name, phoneNumber,
+                                                                                             password){};
 
 void Driver::pinCar(Car *car) {
-    this->car = car;
+    this->cars.push_back(car);
+    DB_Helper::writeListOfDrivers();
 }
 
-Car *Driver::getCar() const {
-    return car;
-}
+
 
 bool Driver::isReady(Date startDate) const {
     if(orderHistory.empty()){
@@ -34,4 +34,33 @@ Date Driver::getEndDate() {
     }
     return orderHistory.back()->getEndDate();
 
+}
+
+const vector<Car*> &Driver::getCars() const {
+    return cars;
+}
+
+
+
+string Driver::serialize(const Driver& driver) {
+    string passengerStr = "/Name " + driver.getName() + "/Phone " + driver.getPhoneNumber() + "/Password " + driver.getPassword() +
+                          "/Orders {";
+    for(auto order: driver.getOrderHistoryId()){
+        passengerStr += to_string(order);
+        passengerStr += " ";
+    }
+    passengerStr += "}";
+
+    passengerStr += "/";
+
+    passengerStr += "Cars {";
+    for(const auto& car: driver.getCars()){
+        passengerStr += car->getNumber();
+        passengerStr += " ";
+    }
+    passengerStr += "}";
+
+    passengerStr += "/";
+
+    return passengerStr;
 }

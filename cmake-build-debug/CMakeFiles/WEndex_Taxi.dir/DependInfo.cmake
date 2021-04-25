@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj"
+  "C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Users/User.cpp.obj"

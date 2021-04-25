@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj"
+  "CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Users/Passenger.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Users/User.cpp.obj"

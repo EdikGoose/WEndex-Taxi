@@ -38,5 +38,29 @@ int Location::getDistance(const Location &from, const Location &to) {
 
 }
 
+Location Location::deserialize(string location) {
+    int x,y;
+    char symbol = ':';
+    int indexOfDivider = 0;
+    string beforeDivider;
+    string afterDivider;
+    while(location[indexOfDivider] != symbol){
+        beforeDivider+=location[indexOfDivider];
+        indexOfDivider++;
+    }
+    indexOfDivider++;
+    while(indexOfDivider != location.size()){
+        afterDivider+=location[indexOfDivider];
+        indexOfDivider++;
+    }
+    x = stoi(beforeDivider);
+    y = stoi(afterDivider);
+    return Location(x,y);
+}
+
+string Location::serialize(const Location& location) {
+    return to_string(location.getCoordinateX()) + ":" + to_string(location.getCoordinateY());
+}
+
 
 

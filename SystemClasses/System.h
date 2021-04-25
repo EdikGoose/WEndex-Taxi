@@ -22,7 +22,7 @@ private:
 public:
     static Passenger* registerPassenger(const string& name, const string& phoneNumber, const string& password);
 
-    static Driver* registerDriver(const string &name, const string &phoneNumber, const string &password, Car* car);
+    static Driver* registerDriver(const string &name, const string &phoneNumber, const string &password);
 
     static Car* registerCar(const string& model, const string& color, const string& number, CarType carType);
 
@@ -34,7 +34,7 @@ public:
 
 private:
     static Order* makeOrder(const Date &startDate, const Date &endTime, const Location &startLocation, const Location &endLocation,
-                             Passenger *passenger,  Driver *driver, int cost, int distance);
+                             Passenger *passenger,  Driver *driver, Car* car, int cost, int distance);
 
 };
 

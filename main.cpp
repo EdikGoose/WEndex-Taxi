@@ -19,14 +19,9 @@ using namespace std;
 int main() {
     srand((unsigned) time(nullptr)); // for unique random
 
-    //Initialize locations
+
     Location startLocation(0,0);
     Location endLocation(6,8);
-
-
-    /**
-     * Initially, in data base we info about one driver, one passenger, one car and one order
-     */
 
     //Initialize all types of cars
     Car* BusinessCar = System::registerCar("TESLA","RED","1AAA55",CarType::BUSINESS);
@@ -39,29 +34,32 @@ int main() {
     Passenger* passenger2 = System::registerPassenger("MikePassenger","+7977456398","10531");
 
     //Initialize drivers
-    System::registerDriver("ShilovDriver","+79348566923","13435",BusinessCar);
-    System::registerDriver("IvanovDriver","+79134593485","13435",EconomyCar);
-    System::registerDriver("RezaDriver","+79278345012","1536",ComfortCar);
-    System::registerDriver("KonyuhovDriver","+79123874589","5317",ComfortPlus);
+    Driver* driver1 = System::registerDriver("ShilovDriver","+79348566923","13435"); driver1->pinCar(BusinessCar);
+    Driver* driver2 = System::registerDriver("IvanovDriver","+79134593485","13435"); driver2->pinCar(EconomyCar);
+    Driver* driver3 = System::registerDriver("RezaDriver","+79278345012","1536"); driver3->pinCar(ComfortCar);
+    Driver* driver4 = System::registerDriver("KonyuhovDriver","+79123874589","5317"); driver4->pinCar(ComfortPlus);
 
 
-    //Do some orders. For do preOrder we need two locations, passenger which is doing the order, and needed type of car
+    //Do some orders. For do preOrder we need two locations, passenger which is doing the order, and needed type of cars
     System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS);
     System::preOrder(startLocation, endLocation,passenger2, CarType::COMFORTPLUS);
 
     System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be rejected, because there are no free drivers
 
+    /*
     Date neededTime = Date::getCurrentDate()+2; // wait 2 minutes before driver end the order
     while(Date::getCurrentDate()<=neededTime);
+    */
 
     System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be confirmed
 
 
     //print all checks of orders
     list<Order> listOfOrder = System::getListOfAllOrders();
-    for(Order& order: listOfOrder){
+    for(Order& order: listOfOrder) {
         Output::printCheckOfOrder(&order);
     }
+
 
     return 0;
 }

@@ -12,6 +12,7 @@
 
 class Passenger;
 class Driver;
+class Car;
 
 class Order {
 private:
@@ -24,6 +25,7 @@ private:
 
     const Passenger* passenger;
     const Driver* driver;
+    const Car* car;
 
 
     int cost;
@@ -32,7 +34,7 @@ private:
     int id = -1;
 public:
     Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
-          Passenger *passenger, const Driver *driver, int cost, int distance);
+          Passenger *passenger, const Driver *driver, const Car* car, int cost, int distance);
 
 
     const Date &getStartDate() const;
@@ -52,6 +54,8 @@ public:
     int getDistance() const;
 
     int getId() const;
+
+    const Car *getCar() const;
 
     void setId(int id);
 

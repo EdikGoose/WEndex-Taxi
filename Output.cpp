@@ -69,8 +69,11 @@ void Output::printInfoAboutCar(const Car *car) {
 
 void Output::printInfoAboutDriver(const Driver *driver) {
     cout << "Name: " << driver->getName() << ". Rating:" << driver->getRating() << ". Phone number: " << driver->getPhoneNumber() << endl;
-    cout << "       " << "Car of this driver: ";
-    printInfoAboutCar(driver->getCar());
+    cout << "       " << "Cars of this driver: ";
+    for(auto car: driver->getCars()){
+        printInfoAboutCar(car);
+    }
+
 
 }
 

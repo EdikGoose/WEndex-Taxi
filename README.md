@@ -5,13 +5,13 @@ __We have two types of users:__
 * Drivers
 * Passengers
 
-__Drivers have car. Cars can be one of the four types:__
+__Drivers have cars. Cars can be one of the four types:__
 * Economy
 * Comfort. It has bottles of water
 * Comfort plus
 * Business
 
-Users can make an order, which creates based on **start location, end location and type of needed car.**
+Users can make an order, which creates based on **start location, end location and type of needed cars.**
 Users can reject the order, if they do not like it. 
 
 The system considering time of trip, i.e. driver cannot take the order,

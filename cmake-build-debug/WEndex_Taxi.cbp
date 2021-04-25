@@ -176,6 +176,12 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>

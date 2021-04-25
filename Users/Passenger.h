@@ -26,8 +26,12 @@ private:
 public:
     void addPinnedAddress(const Location& location);
 
+
     void addCard(const Card& card);
 
+    static string serialize(const Passenger& passenger);
+
+    const list<Location> &getPinnedAddresses() const;
 
 };
 

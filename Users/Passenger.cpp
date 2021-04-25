@@ -5,6 +5,7 @@
 #include "Passenger.h"
 #include "../Cars/CarType.h"
 #include "../SystemClasses/DriverGateway.h"
+#include "../DB_Helper.h"
 
 Passenger::Passenger(const string &name, const string &phoneNumber, const string &password) : User(name, phoneNumber,
                                                                                                    password) {
@@ -13,10 +14,38 @@ Passenger::Passenger(const string &name, const string &phoneNumber, const string
 
 void Passenger::addPinnedAddress(const Location &location) {
     pinnedAddresses.push_back(location);
-    //db
+    DB_Helper::writeListOfPassenger();
+
 }
 
 void Passenger::addCard(const Card &card) {
     listOfCards.push_back(card);
 }
 
+string Passenger::serialize(const Passenger& passenger) {
+    string passengerStr = "/Name " + passenger.getName() + "/Phone " + passenger.getPhoneNumber() + "/Password " + passenger.getPassword() +
+            "/Orders {";
+    for(auto order: passenger.getOrderHistoryId()){
+        passengerStr += to_string(order);
+        passengerStr += " ";
+    }
+    passengerStr += "}";
+
+    passengerStr += "/";
+
+    passengerStr += "PinnedAddresses {";
+    for(const auto& address: passenger.getPinnedAddresses()){
+        passengerStr += Location::serialize(address);
+        passengerStr += " ";
+    }
+    passengerStr += "}";
+
+    passengerStr += "/";
+
+    return passengerStr;
+
+}
+
+const list<Location> &Passenger::getPinnedAddresses() const {
+    return pinnedAddresses;
+}

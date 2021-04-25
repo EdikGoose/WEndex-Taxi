@@ -5,10 +5,10 @@
 #include "Order.h"
 
 Order::Order(const Date &startDate, const Date &endDate, const Location &startLocation, const Location &endLocation,
-             Passenger *passenger, const Driver *driver, int cost, int distance) : startDate(startDate), endDate(endDate),
+             Passenger *passenger, const Driver *driver, const Car* car, int cost, int distance) : startDate(startDate), endDate(endDate),
                                                                              startLocation(startLocation),
                                                                              endLocation(endLocation),
-                                                                             passenger(passenger), driver(driver),
+                                                                             passenger(passenger), driver(driver), car(car),
                                                                              cost(cost), distance(distance) {
     this->id = ++commonId;
 }
@@ -57,4 +57,8 @@ void Order::setId(int id) {
 
 void Order::setCommonId(int commonId) {
     Order::commonId = commonId;
+}
+
+const Car *Order::getCar() const {
+    return car;
 };
