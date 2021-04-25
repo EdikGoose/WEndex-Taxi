@@ -439,6 +439,33 @@ Payment/Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.s
 .PHONY : Payment/Card.cpp.s
 
+SystemClasses/AdminGateway.obj: SystemClasses/AdminGateway.cpp.obj
+
+.PHONY : SystemClasses/AdminGateway.obj
+
+# target to build an object file
+SystemClasses/AdminGateway.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj
+.PHONY : SystemClasses/AdminGateway.cpp.obj
+
+SystemClasses/AdminGateway.i: SystemClasses/AdminGateway.cpp.i
+
+.PHONY : SystemClasses/AdminGateway.i
+
+# target to preprocess a source file
+SystemClasses/AdminGateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.i
+.PHONY : SystemClasses/AdminGateway.cpp.i
+
+SystemClasses/AdminGateway.s: SystemClasses/AdminGateway.cpp.s
+
+.PHONY : SystemClasses/AdminGateway.s
+
+# target to generate assembly for a file
+SystemClasses/AdminGateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.s
+.PHONY : SystemClasses/AdminGateway.cpp.s
+
 SystemClasses/CarGateway.obj: SystemClasses/CarGateway.cpp.obj
 
 .PHONY : SystemClasses/CarGateway.obj
@@ -724,6 +751,9 @@ help:
 	@echo ... Payment/Card.obj
 	@echo ... Payment/Card.i
 	@echo ... Payment/Card.s
+	@echo ... SystemClasses/AdminGateway.obj
+	@echo ... SystemClasses/AdminGateway.i
+	@echo ... SystemClasses/AdminGateway.s
 	@echo ... SystemClasses/CarGateway.obj
 	@echo ... SystemClasses/CarGateway.i
 	@echo ... SystemClasses/CarGateway.s

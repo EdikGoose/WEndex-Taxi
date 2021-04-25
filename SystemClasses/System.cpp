@@ -13,16 +13,19 @@
 #include <bits/stdc++.h>
 
 
-Passenger* System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
+void System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
     Passenger* refToNewPassenger = PassengerGateway::addPassenger(name, phoneNumber, password);
     DB_Helper::writeListOfPassenger(); // update BD
-    return refToNewPassenger;
 }
 
-Driver* System::registerDriver(const string &name, const string &phoneNumber, const string &password) {
+void System::registerDriver(const string &name, const string &phoneNumber, const string &password) {
     Driver* refToNewDriver = DriverGateway::addDriver(name,phoneNumber,password);
     DB_Helper::writeListOfDrivers();
-    return refToNewDriver;
+}
+
+void System::registerAdmin(const string &name, const string &phoneNumber, const string &password) {
+    AdminGateway::addAdmin(name,phoneNumber,password);
+    DB_Helper::writeListOfAdmins();
 }
 
 Car* System::registerCar(const string& model, const string& color, const string& number, CarType carType) {
@@ -38,7 +41,7 @@ const list<Order> &System::getListOfAllOrders() {
 
 Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
     Date startDate = Date::getCurrentDate();
-    for(Driver& driver: DriverGateway::getListOfAllDrivers()) {
+    for(Driver& driver: DriverGateway::getMutableListOfAllDrivers()) {
         for(Car* car: driver.getCars()) {
             if (car->getType() == carType && driver.isReady(startDate)) {
                 int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
@@ -93,5 +96,36 @@ const Order *System::findOrderById(int id) {
     }
     return nullptr;
 }
+
+Driver *System::loginAsDriver(const string &phoneNumber, const string &password) {
+    for(auto& driver: DriverGateway::getMutableListOfAllDrivers()){
+        if(driver.getPhoneNumber() == phoneNumber && driver.getPassword() == password){
+            return &driver;
+        }
+    }
+    return nullptr;
+}
+
+Passenger *System::loginAsPassenger(const string &phoneNumber, const string &password) {
+    for(auto& passenger: PassengerGateway::getMutableListOfAllPassengers()){
+        if(passenger.getPhoneNumber() == phoneNumber && passenger.getPassword() == password){
+            return &passenger;
+        }
+    }
+    return nullptr;
+}
+
+Admin *System::loginAsAdmin(const string &phoneNumber, const string &password) {
+    for(auto& admin: AdminGateway::getMutableListOfAllAdmins()){
+        if(admin.getPhoneNumber() == phoneNumber && admin.getPassword() == password){
+            return &admin;
+        }
+    }
+    return nullptr;
+}
+
+
+
+
 
 

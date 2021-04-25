@@ -15,13 +15,14 @@ class PassengerGateway {
 private:
     static inline list<Passenger> listOfPassengers = {};
     static Passenger* addPassenger(const string &name, const string &phoneNumber, const string &password);
-
+    static Passenger* findByPhoneNumber(const string& phoneNumber);
+    static list<Passenger> &getMutableListOfAllPassengers();
 public:
-    static list<Passenger> &getListOfAllPassengers();
+    static const list<Passenger> &getListOfPassengers();
 
     static void addOrder(Passenger* passenger, Order* order);
 
-    static Passenger* findByPhoneNumber(const string& phoneNumber);
+
 
     /**
      * Specific method for DB work

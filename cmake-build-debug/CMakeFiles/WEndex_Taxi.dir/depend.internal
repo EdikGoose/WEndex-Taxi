@@ -47,10 +47,12 @@ CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
@@ -82,6 +84,14 @@ CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj
 CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.cpp
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj
+ C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.cpp
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/CarGateway.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
@@ -146,13 +156,22 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
+CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj
+ C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.cpp
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 CMakeFiles/WEndex_Taxi.dir/Users/Driver.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
@@ -228,10 +247,12 @@ CMakeFiles/WEndex_Taxi.dir/main.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
  C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h

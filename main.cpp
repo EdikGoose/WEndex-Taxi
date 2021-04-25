@@ -19,7 +19,13 @@ using namespace std;
 int main() {
     srand((unsigned) time(nullptr)); // for unique random
 
+    for(const auto& admin: AdminGateway::getListOfAllAdmins()){
+        cout << admin.getName() << "  " << admin.getPhoneNumber() << endl;
+    }
 
+
+
+    /*
     Location startLocation(0,0);
     Location endLocation(6,8);
 
@@ -30,14 +36,28 @@ int main() {
     Car* ComfortPlus = System::registerCar("HYUNDAI","GREEN","1KJE83",CarType::COMFORTPLUS);
 
     //Initialize passengers
-    Passenger* passenger1 = System::registerPassenger("ZuevPassenger","+7927351398","13531");
-    Passenger* passenger2 = System::registerPassenger("MikePassenger","+7977456398","10531");
+    System::registerPassenger("ZuevPassenger","+7927351398","13531");
+    Passenger* passenger1 = System::loginAsPassenger("ZuevPassenger","13531");
+
+    System::registerPassenger("MikePassenger","+7977456398","10531");
+    Passenger* passenger2 = System::loginAsPassenger("MikePassenger","10531");
 
     //Initialize drivers
-    Driver* driver1 = System::registerDriver("ShilovDriver","+79348566923","13435"); driver1->pinCar(BusinessCar);
-    Driver* driver2 = System::registerDriver("IvanovDriver","+79134593485","13435"); driver2->pinCar(EconomyCar);
-    Driver* driver3 = System::registerDriver("RezaDriver","+79278345012","1536"); driver3->pinCar(ComfortCar);
-    Driver* driver4 = System::registerDriver("KonyuhovDriver","+79123874589","5317"); driver4->pinCar(ComfortPlus);
+    System::registerDriver("ShilovDriver","+79348566923","13435");
+    Driver* driver1 = System::loginAsDriver("ShilovDriver","13435");
+    driver1->pinCar(BusinessCar);
+
+    System::registerDriver("IvanovDriver","+79134593485","13435");
+    Driver* driver2 = System::loginAsDriver("IvanovDriver","13435");
+    driver2->pinCar(EconomyCar);
+
+    System::registerDriver("RezaDriver","+79278345012","1536");
+    Driver* driver3 = System::loginAsDriver("RezaDriver","1536");
+    driver3->pinCar(ComfortCar);
+
+    System::registerDriver("KonyuhovDriver","+79123874589","5317");
+    Driver* driver4 = System::loginAsDriver("KonyuhovDriver", "5317");
+    driver4->pinCar(ComfortPlus);
 
 
     //Do some orders. For do preOrder we need two locations, passenger which is doing the order, and needed type of cars
@@ -46,10 +66,10 @@ int main() {
 
     System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be rejected, because there are no free drivers
 
-    /*
-    Date neededTime = Date::getCurrentDate()+2; // wait 2 minutes before driver end the order
-    while(Date::getCurrentDate()<=neededTime);
-    */
+
+    //Date neededTime = Date::getCurrentDate()+2; // wait 2 minutes before driver end the order
+    //while(Date::getCurrentDate()<=neededTime);
+
 
     System::preOrder(startLocation, endLocation, passenger1, CarType::BUSINESS); // will be confirmed
 
@@ -59,7 +79,7 @@ int main() {
     for(Order& order: listOfOrder) {
         Output::printCheckOfOrder(&order);
     }
-
+    */
 
     return 0;
 }

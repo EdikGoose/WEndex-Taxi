@@ -15,8 +15,12 @@ private:
     static inline list<Driver> listOfDrivers = {};
     static Driver* addDriver(const string &name, const string &phoneNumber, const string &password);
 
+    static list<Driver> &getMutableListOfAllDrivers();
+
 public:
-    static list<Driver> &getListOfAllDrivers();
+
+    static const list<Driver> &getListOfDrivers();
+
     static void addOrder(Driver* driver, Order* order);
 
 

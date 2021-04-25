@@ -12,6 +12,7 @@ list<Order> DB_Helper::readListOfOrders() {
     readListOfCars();
     readListOfDrivers();
     readListOfPassenger();
+    readListOfAdmins();
 
     ifstream OrdersFile ("../DBs/OrdersDB");
     string line;
@@ -205,7 +206,7 @@ void DB_Helper::writeListOfDrivers() {
     ofstream DriversFile ("../DBs/DriversDB");
     if (DriversFile.is_open())
     {
-        list<Driver> listOfDrivers = DriverGateway::getListOfAllDrivers();
+        list<Driver> listOfDrivers = DriverGateway::getMutableListOfAllDrivers();
         for(Driver& driver: listOfDrivers) {
             DriversFile << Driver::serialize(driver) << "\n";
         }
@@ -298,7 +299,7 @@ void DB_Helper::writeListOfPassenger() {
     ofstream PassengerFile ("../DBs/PassengersDB");
     if (PassengerFile.is_open())
     {
-        list<Passenger> listOfPassenger = PassengerGateway::getListOfAllPassengers();
+        list<Passenger> listOfPassenger = PassengerGateway::getMutableListOfAllPassengers();
         for(const Passenger& passenger:listOfPassenger) {
             PassengerFile << Passenger::serialize(passenger) << "\n";
         }
@@ -328,6 +329,65 @@ vector<int> DB_Helper::divideIntoNumbers(const string &line) {
         numbers.push_back(number);
     }
     return numbers;
+}
+
+void DB_Helper::readListOfAdmins() {
+    ifstream AdminsFile ("../DBs/AdminsDB");
+    string line;
+    if (AdminsFile.is_open())
+    {
+        while (getline (AdminsFile, line))
+        {
+            if(line.empty())break;
+            string name, phoneNumber, password;
+
+            unsigned int indexOfLastSlash = 0;
+            unsigned int indexOfPreviousSlash = 0;
+
+            while(indexOfLastSlash != line.length()-1) {
+                indexOfPreviousSlash = indexOfLastSlash;
+                indexOfLastSlash = line.find('/', indexOfLastSlash+1);
+
+                unsigned int indexOfFirstLetter = indexOfPreviousSlash+1;
+                unsigned int lengthOfWord = indexOfLastSlash - indexOfFirstLetter;
+
+
+                string info = line.substr(indexOfFirstLetter, lengthOfWord);
+                auto words = divideIntoWords(info);
+                if(words[0] == "Name"){
+                    name = words[1];
+                }
+                else if(words[0] == "Phone"){
+                    phoneNumber = words[1];
+                }
+                else if(words[0] == "Password"){
+                    password = words[1];
+                }
+            }
+
+            AdminGateway::addAdmin(name,phoneNumber,password);
+
+
+        }
+        AdminsFile.close();
+    }
+    else{
+        cout << "Problems with opening file";
+    }
+}
+
+void DB_Helper::writeListOfAdmins() {
+    ofstream AdminFile ("../DBs/AdminsDB");
+    if (AdminFile.is_open())
+    {
+        list<Admin> listOfAdmins = AdminGateway::getMutableListOfAllAdmins();
+        for(const Admin& admin:listOfAdmins) {
+            AdminFile << Admin::serialize(admin) << "\n";
+        }
+    }
+    else{
+        cout << "Problems with opening file";
+    }
 }
 
 

@@ -11,7 +11,7 @@ Driver* DriverGateway::addDriver(const string &name, const string &phoneNumber, 
     return &listOfDrivers.back();
 }
 
-list<Driver> &DriverGateway::getListOfAllDrivers() {
+list<Driver> &DriverGateway::getMutableListOfAllDrivers() {
     return listOfDrivers;
 }
 
@@ -22,7 +22,7 @@ void DriverGateway::addOrder(Driver *driver, Order *order) {
 }
 
 Driver *DriverGateway::findByPhoneNumber(const string& phoneNumber) {
-    for(Driver& driver: getListOfAllDrivers()){
+    for(Driver& driver: getMutableListOfAllDrivers()){
         if(driver.getPhoneNumber() == phoneNumber)
             return &driver;
     }
@@ -35,4 +35,8 @@ void DriverGateway::addOrderToDriverById(Driver *driver, Order *order) {
             driver->addOrder(order);
         }
     }
+}
+
+const list<Driver> &DriverGateway::getListOfDrivers() {
+    return listOfDrivers;
 }

@@ -12,7 +12,7 @@ Passenger* PassengerGateway::addPassenger(const string &name, const string &phon
 
 }
 
-list<Passenger> &PassengerGateway::getListOfAllPassengers() {
+list<Passenger> &PassengerGateway::getMutableListOfAllPassengers() {
     return listOfPassengers;
 }
 
@@ -23,7 +23,7 @@ void PassengerGateway::addOrder(Passenger *passenger, Order *order) {
 }
 
 Passenger *PassengerGateway::findByPhoneNumber(const string& phoneNumber) {
-    for(Passenger& passenger: getListOfAllPassengers()){
+    for(Passenger& passenger: getMutableListOfAllPassengers()){
         if(passenger.getPhoneNumber() == phoneNumber)
             return &passenger;
     }
@@ -36,6 +36,10 @@ void PassengerGateway::addOrderToPassengerById(Passenger *passenger, Order *orde
             passenger->addOrder(order);
         }
     }
+}
+
+const list<Passenger> &PassengerGateway::getListOfPassengers() {
+    return listOfPassengers;
 }
 
 

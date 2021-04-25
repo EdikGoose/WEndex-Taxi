@@ -40,6 +40,12 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
 Car.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.cpp
+DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
+SystemClasses/System.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
 iostream
 -
@@ -80,6 +86,14 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
 ../Location.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp
+iostream
+-
+Output.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+Users/Passenger.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
 Date.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
@@ -96,6 +110,14 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.cpp
+AdminGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
+../Users/Admin.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
 iostream
 -
@@ -110,19 +132,53 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
 ../Cars/BusinessCar.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp
+DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+../DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
 ../Users/Driver.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp
+PassengerGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
+../DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
 ../Users/Passenger.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp
+System.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+CarGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
+../Output.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
+../Cars/EconomyCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
+../Cars/ComfortCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
+../Cars/ComfortPlusCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
+../Cars/BusinessCar.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
+bits/stdc++.h
+-
 
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
 iostream
 -
 ../Users/Passenger.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+../Users/Admin.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
 PassengerGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
 DriverGateway.h
@@ -131,6 +187,18 @@ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
 CarGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
+../DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
+AdminGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
+User.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp
+Driver.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
 ../DB_Helper.h
 C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
 
@@ -144,6 +212,16 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
 ../SystemClasses/DriverGateway.h
 C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
 
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.cpp
+Passenger.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
+../Cars/CarType.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
+../SystemClasses/DriverGateway.h
+C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+../DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
+
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
 User.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
@@ -155,6 +233,12 @@ C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
 ../Cars/CarType.h
 C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
+
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.cpp
+User.h
+C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
+../DB_Helper.h
+C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
 
 C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 iostream

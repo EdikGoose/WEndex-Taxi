@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.obj"
+  "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/CarGateway.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/DriverGateway.cpp.obj"
   "C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp" "C:/Users/super/CLionProjects/WEndex-Taxi/cmake-build-debug/CMakeFiles/WEndex_Taxi.dir/SystemClasses/PassengerGateway.cpp.obj"
