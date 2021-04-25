@@ -6,9 +6,14 @@
 #define WENDEX_TAXI_ADMIN_H
 
 #include "User.h"
+#include "Passenger.h"
+#include "Driver.h"
 
-class Admin : public User {
-
+class Admin {
+private:
+    string name;
+    string phoneNumber;
+    string password;
 
 public:
     Admin(const string &name, const string &phoneNumber, const string &password);
@@ -18,6 +23,21 @@ public:
     void blockPassenger(Passenger* passenger);
 
     void blockDriver(Driver* driver);
+
+    void unblockPassenger(Passenger* passenger);
+
+    void unblockDriver(Driver* driver);
+
+
+    const string &getName() const;
+
+    const string &getPhoneNumber() const;
+
+    const string &getPassword() const;
+
+    const Passenger* findPassenger(const string& phoneNumber);
+    const Driver* findDriver(const string& phoneNumber);
+    const Car* findCar(const string& numberOfCar);
 };
 
 

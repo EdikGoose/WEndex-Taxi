@@ -19,6 +19,7 @@ using namespace std;
 class CarGateway {
     friend class System;
     friend class DB_Helper;
+    friend class Admin;
 private:
     static inline list<EconomyCar> listOfEconomy = {};
     static inline list<ComfortCar> listOfComfort = {};

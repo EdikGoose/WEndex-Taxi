@@ -11,6 +11,7 @@
 class DriverGateway {
     friend class System;
     friend class DB_Helper;
+    friend class Admin;
 private:
     static inline list<Driver> listOfDrivers = {};
     static Driver* addDriver(const string &name, const string &phoneNumber, const string &password);

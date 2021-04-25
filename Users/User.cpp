@@ -37,4 +37,8 @@ const string &User::getPassword() const {
     return password;
 }
 
+bool User::isBlockedByAdmin() const {
+    return isBlocked;
+}
+
 

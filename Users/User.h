@@ -13,6 +13,7 @@
 using namespace std;
 
 class User {
+    friend class Admin;
 protected:
     string name;
     double rating = 0;
@@ -20,6 +21,9 @@ protected:
     string password;
     list<Order*> orderHistory;
     list<int> orderHistoryID;
+
+    bool isBlocked = false;
+
 public:
     User(string name, string phoneNumber, string password) : name(move(name)),phoneNumber(move(phoneNumber)),
                                                                                                  password(move(password)) {};
@@ -37,10 +41,11 @@ public:
 
     void addIdOfOrder(int id);
 
-    const list<int> &getOrderHistoryId() const;
+    [[nodiscard]] const list<int> &getOrderHistoryId() const;
 
-    const string &getPassword() const;
+    [[nodiscard]] const string &getPassword() const;
 
+    [[nodiscard]] bool isBlockedByAdmin() const;
 
 
 };

@@ -10,6 +10,7 @@
 #include "../Cars/ComfortCar.h"
 #include "../Cars/ComfortPlusCar.h"
 #include "../Cars/BusinessCar.h"
+#include "../Exceptions/PassengerBlockedException.h"
 #include <bits/stdc++.h>
 
 
@@ -39,7 +40,12 @@ const list<Order> &System::getListOfAllOrders() {
 }
 
 
+
 Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
+    if(passenger->isBlockedByAdmin()){
+        throw PassengerBlockedException(passenger);
+    }
+
     Date startDate = Date::getCurrentDate();
     for(Driver& driver: DriverGateway::getMutableListOfAllDrivers()) {
         for(Car* car: driver.getCars()) {

@@ -11,6 +11,7 @@
 class PassengerGateway {
     friend class System;
     friend class DB_Helper;
+    friend class Admin;
 
 private:
     static inline list<Passenger> listOfPassengers = {};

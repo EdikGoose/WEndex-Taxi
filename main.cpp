@@ -8,6 +8,7 @@
 #include "SystemClasses/System.h"
 #include "Cars/EconomyCar.h"
 #include <thread>
+#include "Exceptions/PassengerBlockedException.h"
 #include <ctime>
 #include "DB_Helper.h"
 
@@ -19,12 +20,40 @@ using namespace std;
 int main() {
     srand((unsigned) time(nullptr)); // for unique random
 
-    for(const auto& admin: AdminGateway::getListOfAllAdmins()){
-        cout << admin.getName() << "  " << admin.getPhoneNumber() << endl;
+    Location startLocation(0,0);
+    Location endLocation(6,8);
+
+    System::registerAdmin("EduardAdmin","+79279383880","1235");
+    Admin* admin = System::loginAsAdmin("+79279383880","1235");
+
+    Car* ComfortPlus = System::registerCar("HYUNDAI","GREEN","1KJE83",CarType::COMFORTPLUS);
+
+    System::registerPassenger("ZuevPassenger","+7927351398","13531");
+    Passenger* passenger1 = System::loginAsPassenger("+7927351398","13531");
+
+    System::registerDriver("RezaDriver","+79278345012","1536");
+    Driver* driver3 = System::loginAsDriver("+79278345012","1536");
+    driver3->pinCar(ComfortPlus);
+
+    System::registerDriver("KolyaDriver","+79378346000","1536");
+    Driver* driver4 = System::loginAsDriver("+79378346000","1536");
+    driver3->pinCar(ComfortPlus);
+
+    System::preOrder(startLocation, endLocation,passenger1,CarType::COMFORTPLUS);
+
+    admin->blockPassenger(passenger1);
+    try {
+        System::preOrder(startLocation, endLocation, passenger1, CarType::COMFORTPLUS);
+    }
+    catch (PassengerBlockedException& ex) {
+        cout << "EXCEPTION: " << ex.what() << endl;
     }
 
 
-
+    list<Order> listOfOrder = System::getListOfAllOrders();
+    for(Order& order: listOfOrder) {
+        Output::printCheckOfOrder(&order);
+    }
     /*
     Location startLocation(0,0);
     Location endLocation(6,8);

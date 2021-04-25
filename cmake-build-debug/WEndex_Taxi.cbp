@@ -125,6 +125,12 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Location.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
