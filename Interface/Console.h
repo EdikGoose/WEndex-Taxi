@@ -11,6 +11,8 @@
 #include <vector>
 #include "../Exceptions/IncorrectLoginException.h"
 #include "../Exceptions/NoSuchUserException.h"
+#include "../Exceptions/PassengerIsOnTripException.h"
+#include "../Exceptions/PassengerBlockedException.h"
 #include "../Output.h"
 
 using namespace std;

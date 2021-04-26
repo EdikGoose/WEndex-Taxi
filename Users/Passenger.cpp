@@ -55,3 +55,13 @@ string Passenger::serialize(const Passenger& passenger) {
 const list<Location> &Passenger::getPinnedAddresses() const {
     return pinnedAddresses;
 }
+
+
+
+bool Passenger::canMakeOrder() {
+    Order* lastOrder = getOrderHistory().back();
+    if(orderHistory.empty() || Date::getCurrentDate() >= lastOrder->getEndDate()){
+        return true;
+    }
+    return false;
+}

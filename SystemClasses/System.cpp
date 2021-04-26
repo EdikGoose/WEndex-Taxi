@@ -46,6 +46,9 @@ Order* System::preOrder(const Location &startLocation, const Location &endLocati
     if(passenger->isBlockedByAdmin()){
         throw PassengerBlockedException(passenger);
     }
+    if(!passenger->canMakeOrder()){
+        throw PassengerIsOnTripException(passenger);
+    }
 
     Date startDate = Date::getCurrentDate();
     for(Driver& driver: DriverGateway::getMutableListOfAllDrivers()) {

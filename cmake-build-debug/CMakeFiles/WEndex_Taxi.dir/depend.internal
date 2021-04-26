@@ -44,6 +44,7 @@ CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
@@ -71,6 +72,8 @@ CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.cpp
  C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
@@ -190,6 +193,7 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
@@ -299,6 +303,7 @@ CMakeFiles/WEndex_Taxi.dir/main.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h

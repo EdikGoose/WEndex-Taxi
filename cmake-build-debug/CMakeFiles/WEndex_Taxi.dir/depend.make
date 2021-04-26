@@ -43,6 +43,7 @@ CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../DB_Helper.cpp
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../DB_Helper.h
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Exceptions/NoSuchUserException.h
+CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Exceptions/PassengerIsOnTripException.h
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Location.h
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../OrderClasses/Order.h
 CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj: ../Payment/Card.h
@@ -70,6 +71,8 @@ CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../DB_Helper.h
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Exceptions/IncorrectLoginException.h
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Exceptions/NoSuchUserException.h
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Exceptions/PassengerBlockedException.h
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Exceptions/PassengerIsOnTripException.h
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Interface/Console.cpp
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Interface/Console.h
 CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Location.h
@@ -189,6 +192,7 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Exceptions/IncorrectLoginException.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Exceptions/NoSuchUserException.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Exceptions/PassengerBlockedException.h
+CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Exceptions/PassengerIsOnTripException.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Location.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../OrderClasses/Order.h
 CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj: ../Output.h
@@ -298,6 +302,7 @@ CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Date.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Exceptions/IncorrectLoginException.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Exceptions/NoSuchUserException.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Exceptions/PassengerBlockedException.h
+CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Exceptions/PassengerIsOnTripException.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Interface/Console.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../Location.h
 CMakeFiles/WEndex_Taxi.dir/main.cpp.obj: ../OrderClasses/Order.h

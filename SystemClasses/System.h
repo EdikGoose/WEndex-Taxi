@@ -14,6 +14,7 @@
 #include "CarGateway.h"
 #include "../DB_Helper.h"
 #include "AdminGateway.h"
+#include "../Exceptions/PassengerIsOnTripException.h"
 
 
 using namespace std;

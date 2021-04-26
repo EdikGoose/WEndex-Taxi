@@ -22,6 +22,8 @@ private:
     list<Card> listOfCards;
     list<Location> pinnedAddresses;
 
+    bool isOnTrip = false;
+
     Passenger(const string &name, const string &phoneNumber, const string &password); // private constructor
 public:
     void addPinnedAddress(const Location& location);
@@ -32,6 +34,8 @@ public:
     static string serialize(const Passenger& passenger);
 
     const list<Location> &getPinnedAddresses() const;
+
+    bool canMakeOrder();
 
 };
 

@@ -170,7 +170,15 @@ void Console::printOptionsForPassenger(Passenger* passenger) {
     int answer = writeAnswer();
     switch (answer) {
         case 1:
-            order(passenger);
+            try {
+                order(passenger);
+            }
+            catch (PassengerBlockedException& e) {
+                cout << e.what();
+            }
+            catch (PassengerIsOnTripException& e) {
+                cout << e.what();
+            }
             printOptionsForPassenger(passenger);
             break;
         case 2:

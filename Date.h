@@ -67,6 +67,8 @@ public:
 
     [[nodiscard]] int getYear() const;
 
+    [[nodiscard]] string to_stringTime() const;
+
     bool isNull() const;
 };
 

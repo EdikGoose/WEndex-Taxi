@@ -11,10 +11,10 @@
 using namespace std;
 
 class PassengerBlockedException: public exception{
-    string exceptionMessage = "Passenger is blocked. (";
+    string exceptionMessage = "Sorry, but you are blocked by admin. (";
 public:
     explicit PassengerBlockedException(Passenger* passenger) {
-        exceptionMessage+=(passenger->getName() + " " + passenger->getPhoneNumber()+=")");
+        exceptionMessage+=(passenger->getName() + " " + passenger->getPhoneNumber()+=")")+"\n";
     }
 
     [[nodiscard]] const char *what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {

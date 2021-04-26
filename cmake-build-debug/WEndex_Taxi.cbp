@@ -134,6 +134,9 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
