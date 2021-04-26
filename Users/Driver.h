@@ -13,6 +13,7 @@
 
 class Driver: public User {
     friend class DriverGateway;
+    friend class DB_Helper;
 private:
     vector<Car*> cars = {};
     Driver(const string &name, const string &phoneNumber, const string &password);

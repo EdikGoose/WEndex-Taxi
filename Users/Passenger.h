@@ -15,7 +15,7 @@
 
 class Passenger : public User {
     friend class PassengerGateway; // it is friend class because with his help we will create Passenger objects
-
+    friend class DB_Helper;
 private:
     PaymentMethod paymentMethod;
 

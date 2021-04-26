@@ -11,6 +11,7 @@
 #include "Exceptions/PassengerBlockedException.h"
 #include <ctime>
 #include "DB_Helper.h"
+#include "Interface/Console.h"
 
 
 using namespace std;
@@ -20,6 +21,9 @@ using namespace std;
 int main() {
     srand((unsigned) time(nullptr)); // for unique random
 
+    Console::printMainMenu();
+
+    /*
     Location startLocation(0,0);
     Location endLocation(6,8);
 
@@ -50,10 +54,12 @@ int main() {
     }
 
 
+
     list<Order> listOfOrder = System::getListOfAllOrders();
     for(Order& order: listOfOrder) {
         Output::printCheckOfOrder(&order);
     }
+     */
     /*
     Location startLocation(0,0);
     Location endLocation(6,8);

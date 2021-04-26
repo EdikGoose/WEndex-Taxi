@@ -125,10 +125,19 @@
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
-		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.cpp">
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Location.cpp">

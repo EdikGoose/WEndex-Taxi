@@ -11,16 +11,17 @@
 #include "../Cars/ComfortPlusCar.h"
 #include "../Cars/BusinessCar.h"
 #include "../Exceptions/PassengerBlockedException.h"
+#include "../Exceptions/IncorrectLoginException.h"
 #include <bits/stdc++.h>
 
 
 void System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
-    Passenger* refToNewPassenger = PassengerGateway::addPassenger(name, phoneNumber, password);
+    PassengerGateway::addPassenger(name, phoneNumber, password);
     DB_Helper::writeListOfPassenger(); // update BD
 }
 
 void System::registerDriver(const string &name, const string &phoneNumber, const string &password) {
-    Driver* refToNewDriver = DriverGateway::addDriver(name,phoneNumber,password);
+    DriverGateway::addDriver(name,phoneNumber,password);
     DB_Helper::writeListOfDrivers();
 }
 
@@ -109,7 +110,7 @@ Driver *System::loginAsDriver(const string &phoneNumber, const string &password)
             return &driver;
         }
     }
-    return nullptr;
+    throw IncorrectLoginException();
 }
 
 Passenger *System::loginAsPassenger(const string &phoneNumber, const string &password) {
@@ -118,7 +119,7 @@ Passenger *System::loginAsPassenger(const string &phoneNumber, const string &pas
             return &passenger;
         }
     }
-    return nullptr;
+    throw IncorrectLoginException();
 }
 
 Admin *System::loginAsAdmin(const string &phoneNumber, const string &password) {
@@ -127,7 +128,7 @@ Admin *System::loginAsAdmin(const string &phoneNumber, const string &password) {
             return &admin;
         }
     }
-    return nullptr;
+    throw IncorrectLoginException();
 }
 
 

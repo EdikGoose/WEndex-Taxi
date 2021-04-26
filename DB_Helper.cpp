@@ -140,6 +140,7 @@ void DB_Helper::readListOfDrivers() {
             string name, phoneNumber, password;
             vector<int> idOfOrders;
             vector<string> pinnedCarsId;
+            bool isBanned = false;
 
             unsigned int indexOfLastSlash = 0;
             unsigned int indexOfPreviousSlash = 0;
@@ -183,6 +184,11 @@ void DB_Helper::readListOfDrivers() {
                     else if(words[0] == "Password"){
                         password = words[1];
                     }
+                    else if(words[0] == "IsBanned?"){
+                        if(words[1] == "true"){
+                            isBanned = true;
+                        }
+                    }
 
                 }
             }
@@ -194,6 +200,7 @@ void DB_Helper::readListOfDrivers() {
             for(int id: idOfOrders){
                 driver->addIdOfOrder(id); // reading only id because orders are not read
             }
+            driver->isBlocked = isBanned;
         }
         DriversFile.close();
     }
@@ -230,6 +237,8 @@ void DB_Helper::readListOfPassenger() {
             string name, phoneNumber, password;
             vector<int> idOfOrders;
             vector<Location> pinnedLocations;
+            bool isBanned = false;
+
 
             unsigned int indexOfLastSlash = 0;
             unsigned int indexOfPreviousSlash = 0;
@@ -275,6 +284,11 @@ void DB_Helper::readListOfPassenger() {
                     else if(words[0] == "Password"){
                         password = words[1];
                     }
+                    else if(words[0] == "IsBanned?"){
+                        if(words[1] == "true"){
+                            isBanned = true;
+                        }
+                    }
 
                 }
             }
@@ -286,6 +300,7 @@ void DB_Helper::readListOfPassenger() {
             for(const auto& location: pinnedLocations){
                 passenger->addPinnedAddress(location);
             }
+            passenger->isBlocked = isBanned;
 
         }
         PassengersFile.close();

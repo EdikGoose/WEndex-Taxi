@@ -1,8 +1,3 @@
-/Name RezaDriver/Phone +79278345012/Password 1536/Orders {1 2 }/Cars {1KJE83 1KJE83 1KJE83 1KJE83 1KJE83 1KJE83 1KJE83 1KJE83 }/
-/Name KolyaDriver/Phone +79378346000/Password 1536/Orders {}/Cars {}/
-/Name RezaDriver/Phone +79278345012/Password 1536/Orders {}/Cars {}/
-/Name KolyaDriver/Phone +79378346000/Password 1536/Orders {}/Cars {}/
-/Name RezaDriver/Phone +79278345012/Password 1536/Orders {}/Cars {}/
-/Name KolyaDriver/Phone +79378346000/Password 1536/Orders {}/Cars {}/
-/Name RezaDriver/Phone +79278345012/Password 1536/Orders {}/Cars {}/
-/Name KolyaDriver/Phone +79378346000/Password 1536/Orders {}/Cars {}/
+/Name RezaDriver/Phone +79278345012/Password 1536/Orders {}/Cars {1KJE83 1KJE83 }/IsBanned? false/
+/Name ZuevDriver/Phone +8/Password 12/Orders {}/Cars {124af }/IsBanned? false/
+/Name Zuev/Phone +7/Password 1/Orders {}/Cars {A125A }/IsBanned? false/

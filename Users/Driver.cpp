@@ -43,24 +43,30 @@ const vector<Car*> &Driver::getCars() const {
 
 
 string Driver::serialize(const Driver& driver) {
-    string passengerStr = "/Name " + driver.getName() + "/Phone " + driver.getPhoneNumber() + "/Password " + driver.getPassword() +
-                          "/Orders {";
+    string driverStr = "/Name " + driver.getName() + "/Phone " + driver.getPhoneNumber() + "/Password " + driver.getPassword() +
+                       "/Orders {";
     for(auto order: driver.getOrderHistoryId()){
-        passengerStr += to_string(order);
-        passengerStr += " ";
+        driverStr += to_string(order);
+        driverStr += " ";
     }
-    passengerStr += "}";
+    driverStr += "}";
 
-    passengerStr += "/";
+    driverStr += "/";
 
-    passengerStr += "Cars {";
+    driverStr += "Cars {";
     for(const auto& car: driver.getCars()){
-        passengerStr += car->getNumber();
-        passengerStr += " ";
+        driverStr += car->getNumber();
+        driverStr += " ";
     }
-    passengerStr += "}";
+    driverStr += "}";
 
-    passengerStr += "/";
+    driverStr += "/";
 
-    return passengerStr;
+    string stringAnswer = driver.isBlocked ? "true" : "false";
+
+    driverStr += "IsBanned? "+stringAnswer;
+
+    driverStr += "/";
+
+    return driverStr;
 }

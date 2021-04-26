@@ -43,6 +43,7 @@ CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.cpp
  C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
@@ -59,15 +60,31 @@ CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
 CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.cpp
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
-CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj
+ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
- C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.cpp
- C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.cpp
+ C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Output.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h
 CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj
@@ -99,6 +116,7 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
@@ -169,6 +187,8 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
  C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
@@ -192,7 +212,9 @@ CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h
@@ -274,7 +296,10 @@ CMakeFiles/WEndex_Taxi.dir/main.cpp.obj
  C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h
  C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Date.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h
+ C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Location.h
  C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h
  C:/Users/super/CLionProjects/WEndex-Taxi/Output.h

@@ -6,7 +6,7 @@
 #include "../SystemClasses/PassengerGateway.h"
 #include "../SystemClasses/DriverGateway.h"
 #include "../SystemClasses/CarGateway.h"
-
+#include "../DB_Helper.h"
 
 
 
@@ -35,32 +35,43 @@ const string &Admin::getPassword() const {
 }
 
 void Admin::blockPassenger(Passenger *passenger) {
-    passenger->isBlocked = true;
+    if(passenger->isBlocked){
+        passenger->isBlocked = false;
+    }
+    else {
+        passenger->isBlocked = true;
+    }
+    DB_Helper::writeListOfPassenger();
 }
 
 void Admin::blockDriver(Driver *driver) {
-    driver->isBlocked = true;
+    if(driver->isBlocked) {
+        driver->isBlocked = false;
+    }
+    else{
+        driver->isBlocked = true;
+    }
+    DB_Helper::writeListOfDrivers();
 }
 
-const Passenger *Admin::findPassenger(const string& phoneNumber) {
-    return PassengerGateway::findByPhoneNumber(phoneNumber);
+Passenger *Admin::findPassenger(const string& phoneNumber) {
+    Passenger* passenger = PassengerGateway::findByPhoneNumber(phoneNumber);
+    if(passenger == nullptr)
+        throw NoSuchUserException();
+    return passenger;
 }
 
-const Driver *Admin::findDriver(const string& phoneNumber) {
-    return DriverGateway::findByPhoneNumber(phoneNumber);
+Driver *Admin::findDriver(const string& phoneNumber) {
+    Driver* driver = DriverGateway::findByPhoneNumber(phoneNumber);
+    if(driver == nullptr)
+        throw NoSuchUserException();
+    return driver;
 }
 
 const Car *Admin::findCar(const string& numberOfCar) {
     return CarGateway::findCarByNumber(numberOfCar);
 }
 
-void Admin::unblockPassenger(Passenger *passenger) {
-    passenger->isBlocked = false;
-}
-
-void Admin::unblockDriver(Driver *driver) {
-    driver->isBlocked = false;
-}
 
 
 

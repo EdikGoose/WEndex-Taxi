@@ -42,6 +42,12 @@ string Passenger::serialize(const Passenger& passenger) {
 
     passengerStr += "/";
 
+    string stringAnswer = passenger.isBlocked ? "true" : "false";
+
+    passengerStr += "IsBanned? "+stringAnswer;
+
+    passengerStr += "/";
+
     return passengerStr;
 
 }

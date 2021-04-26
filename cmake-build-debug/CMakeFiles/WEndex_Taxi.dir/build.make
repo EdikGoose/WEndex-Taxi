@@ -349,18 +349,18 @@ CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\SystemClasses\AdminGateway.cpp -o CMakeFiles\WEndex_Taxi.dir\SystemClasses\AdminGateway.cpp.s
 
-CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
-CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj: ../Exceptions/PassengerBlockedException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Exceptions\PassengerBlockedException.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Exceptions\PassengerBlockedException.cpp
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: CMakeFiles/WEndex_Taxi.dir/flags.make
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj: ../Interface/Console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\super\CLionProjects\WEndex-Taxi\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\WEndex_Taxi.dir\Interface\Console.cpp.obj -c C:\Users\super\CLionProjects\WEndex-Taxi\Interface\Console.cpp
 
-CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Exceptions\PassengerBlockedException.cpp > CMakeFiles\WEndex_Taxi.dir\Exceptions\PassengerBlockedException.cpp.i
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\super\CLionProjects\WEndex-Taxi\Interface\Console.cpp > CMakeFiles\WEndex_Taxi.dir\Interface\Console.cpp.i
 
-CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Exceptions\PassengerBlockedException.cpp -o CMakeFiles\WEndex_Taxi.dir\Exceptions\PassengerBlockedException.cpp.s
+CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\super\CLionProjects\WEndex-Taxi\Interface\Console.cpp -o CMakeFiles\WEndex_Taxi.dir\Interface\Console.cpp.s
 
 # Object files for target WEndex_Taxi
 WEndex_Taxi_OBJECTS = \
@@ -385,7 +385,7 @@ WEndex_Taxi_OBJECTS = \
 "CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj" \
 "CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj" \
 "CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj" \
-"CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj"
+"CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj"
 
 # External object files for target WEndex_Taxi
 WEndex_Taxi_EXTERNAL_OBJECTS =
@@ -411,7 +411,7 @@ WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/SystemClasses/CarGateway.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj
-WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj
+WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/build.make
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/linklibs.rsp
 WEndex_Taxi.exe: CMakeFiles/WEndex_Taxi.dir/objects1.rsp

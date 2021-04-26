@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/WEndex_Taxi.dir/Cars/EconomyCar.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/DB_Helper.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Date.cpp.obj"
-  "CMakeFiles/WEndex_Taxi.dir/Exceptions/PassengerBlockedException.cpp.obj"
+  "CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Location.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/OrderClasses/Order.cpp.obj"
   "CMakeFiles/WEndex_Taxi.dir/Output.cpp.obj"

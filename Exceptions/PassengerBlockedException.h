@@ -11,14 +11,14 @@
 using namespace std;
 
 class PassengerBlockedException: public exception{
-    string error = "Passenger is blocked. (";
+    string exceptionMessage = "Passenger is blocked. (";
 public:
     explicit PassengerBlockedException(Passenger* passenger) {
-        error+=(passenger->getName()+" "+passenger->getPhoneNumber()+=")");
+        exceptionMessage+=(passenger->getName() + " " + passenger->getPhoneNumber()+=")");
     }
 
     [[nodiscard]] const char *what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW override {
-        return error.c_str();
+        return exceptionMessage.c_str();
     }
 };
 
