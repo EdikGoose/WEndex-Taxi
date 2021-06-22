@@ -80,6 +80,150 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/BusinessCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/Car.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/CarType.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/ComfortPlusCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Cars/EconomyCar.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/DB_Helper.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Date.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/IncorrectLoginException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/NoSuchUserException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerBlockedException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Exceptions/PassengerIsOnTripException.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Interface/Console.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Location.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Location.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/OrderClasses/Order.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Output.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Output.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/Card.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Payment/PaymentMethod.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/AdminGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/CarGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/DriverGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/PassengerGateway.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/SystemClasses/System.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Admin.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Driver.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/Passenger.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.cpp">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
+		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/Users/User.h">
+			<Option target="WEndex_Taxi"/>
+		</Unit>
 		<Unit filename="C:/Users/super/CLionProjects/WEndex-Taxi/main.cpp">
 			<Option target="WEndex_Taxi"/>
 		</Unit>
