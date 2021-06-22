@@ -6,15 +6,17 @@
 #define WENDEX_TAXI_DRIVER_H
 
 
+#include <vector>
 #include "User.h"
 #include "../Cars/Car.h"
 #include "../SystemClasses/DriverGateway.h"
 
 class Driver: public User {
     friend class DriverGateway;
+    friend class DB_Helper;
 private:
-    Car* car;
-    Driver(const string &name, const string &phoneNumber, const string &password, Car* car);
+    vector<Car*> cars = {};
+    Driver(const string &name, const string &phoneNumber, const string &password);
 public:
 
 
@@ -23,9 +25,11 @@ public:
     void pinCar(Car* car);
 
 
-    Car *getCar() const;
+    const vector<Car *> &getCars() const;
 
     Date getEndDate();
+
+    static string serialize(const Driver& driver);
 
 };
 

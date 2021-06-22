@@ -41,7 +41,24 @@ void Output::printCheckOfOrder(Order* const order) {
 }
 
 void Output::printInfoAboutPassenger(const Passenger* passenger) {
-    cout << "Name: " << passenger->getName() << ". Rating:" << passenger->getRating() << ". Phone number: " << passenger->getPhoneNumber() << endl;
+    cout << "   Name: " << passenger->getName() << endl;
+    cout << "   Phone number:" << passenger->getPhoneNumber() << endl;
+    cout << "   Is blocked?: " << passenger->isBlockedByAdmin() << endl;
+
+    cout << "   Pinned addresses: ";
+    for(auto& location: passenger->getPinnedAddresses()){
+        cout << "X:" << location.getCoordinateX() << " Y:" << location.getCoordinateY() << ", ";
+    }
+
+    cout << endl;
+
+    cout << "   Orders: ";
+    for(auto& order: passenger->getOrderHistoryId()){
+        cout << order << " ";
+    }
+
+    cout << endl;
+
 }
 
 void Output::printInfoAboutLocation(const Location &location) {
@@ -68,9 +85,15 @@ void Output::printInfoAboutCar(const Car *car) {
 }
 
 void Output::printInfoAboutDriver(const Driver *driver) {
-    cout << "Name: " << driver->getName() << ". Rating:" << driver->getRating() << ". Phone number: " << driver->getPhoneNumber() << endl;
-    cout << "       " << "Car of this driver: ";
-    printInfoAboutCar(driver->getCar());
+    cout << "   Name: " << driver->getName() << endl;
+    cout << "   Phone number:" << driver->getPhoneNumber() << endl;
+    cout << "   Is blocked?: " << driver->isBlockedByAdmin() << endl;
+    cout << "   Cars: ";
+    for(auto car: driver->getCars()){
+        cout << car->getNumber() << " ";
+    }
+    cout << endl;
+
 
 }
 

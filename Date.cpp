@@ -111,5 +111,10 @@ Date& Date::operator=(Date date) {
     return *this;
 }
 
+string Date::to_stringTime() const{
+    string str = ::to_string(hours)+":"+::to_string(minutes);
+    return str;
+}
+
 
 

@@ -331,6 +331,33 @@ Date.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Date.cpp.s
 .PHONY : Date.cpp.s
 
+Interface/Console.obj: Interface/Console.cpp.obj
+
+.PHONY : Interface/Console.obj
+
+# target to build an object file
+Interface/Console.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.obj
+.PHONY : Interface/Console.cpp.obj
+
+Interface/Console.i: Interface/Console.cpp.i
+
+.PHONY : Interface/Console.i
+
+# target to preprocess a source file
+Interface/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.i
+.PHONY : Interface/Console.cpp.i
+
+Interface/Console.s: Interface/Console.cpp.s
+
+.PHONY : Interface/Console.s
+
+# target to generate assembly for a file
+Interface/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Interface/Console.cpp.s
+.PHONY : Interface/Console.cpp.s
+
 Location.obj: Location.cpp.obj
 
 .PHONY : Location.obj
@@ -439,6 +466,33 @@ Payment/Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Payment/Card.cpp.s
 .PHONY : Payment/Card.cpp.s
 
+SystemClasses/AdminGateway.obj: SystemClasses/AdminGateway.cpp.obj
+
+.PHONY : SystemClasses/AdminGateway.obj
+
+# target to build an object file
+SystemClasses/AdminGateway.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.obj
+.PHONY : SystemClasses/AdminGateway.cpp.obj
+
+SystemClasses/AdminGateway.i: SystemClasses/AdminGateway.cpp.i
+
+.PHONY : SystemClasses/AdminGateway.i
+
+# target to preprocess a source file
+SystemClasses/AdminGateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.i
+.PHONY : SystemClasses/AdminGateway.cpp.i
+
+SystemClasses/AdminGateway.s: SystemClasses/AdminGateway.cpp.s
+
+.PHONY : SystemClasses/AdminGateway.s
+
+# target to generate assembly for a file
+SystemClasses/AdminGateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/AdminGateway.cpp.s
+.PHONY : SystemClasses/AdminGateway.cpp.s
+
 SystemClasses/CarGateway.obj: SystemClasses/CarGateway.cpp.obj
 
 .PHONY : SystemClasses/CarGateway.obj
@@ -546,6 +600,33 @@ SystemClasses/System.s: SystemClasses/System.cpp.s
 SystemClasses/System.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/SystemClasses/System.cpp.s
 .PHONY : SystemClasses/System.cpp.s
+
+Users/Admin.obj: Users/Admin.cpp.obj
+
+.PHONY : Users/Admin.obj
+
+# target to build an object file
+Users/Admin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.obj
+.PHONY : Users/Admin.cpp.obj
+
+Users/Admin.i: Users/Admin.cpp.i
+
+.PHONY : Users/Admin.i
+
+# target to preprocess a source file
+Users/Admin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.i
+.PHONY : Users/Admin.cpp.i
+
+Users/Admin.s: Users/Admin.cpp.s
+
+.PHONY : Users/Admin.s
+
+# target to generate assembly for a file
+Users/Admin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WEndex_Taxi.dir\build.make CMakeFiles/WEndex_Taxi.dir/Users/Admin.cpp.s
+.PHONY : Users/Admin.cpp.s
 
 Users/Driver.obj: Users/Driver.cpp.obj
 
@@ -685,6 +766,9 @@ help:
 	@echo ... Date.obj
 	@echo ... Date.i
 	@echo ... Date.s
+	@echo ... Interface/Console.obj
+	@echo ... Interface/Console.i
+	@echo ... Interface/Console.s
 	@echo ... Location.obj
 	@echo ... Location.i
 	@echo ... Location.s
@@ -697,6 +781,9 @@ help:
 	@echo ... Payment/Card.obj
 	@echo ... Payment/Card.i
 	@echo ... Payment/Card.s
+	@echo ... SystemClasses/AdminGateway.obj
+	@echo ... SystemClasses/AdminGateway.i
+	@echo ... SystemClasses/AdminGateway.s
 	@echo ... SystemClasses/CarGateway.obj
 	@echo ... SystemClasses/CarGateway.i
 	@echo ... SystemClasses/CarGateway.s
@@ -709,6 +796,9 @@ help:
 	@echo ... SystemClasses/System.obj
 	@echo ... SystemClasses/System.i
 	@echo ... SystemClasses/System.s
+	@echo ... Users/Admin.obj
+	@echo ... Users/Admin.i
+	@echo ... Users/Admin.s
 	@echo ... Users/Driver.obj
 	@echo ... Users/Driver.i
 	@echo ... Users/Driver.s

@@ -34,6 +34,8 @@ public:
     static void readListOfPassenger();
     static void writeListOfPassenger();
 
+    static void readListOfAdmins();
+    static void writeListOfAdmins();
 
 
     //  number model color type

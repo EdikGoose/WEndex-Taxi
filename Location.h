@@ -37,6 +37,10 @@ public:
 
     static int getDistance(const Location& from, const Location& to);
 
+    static Location deserialize(string location);
+
+    static string serialize(const Location& location);
+
 private:
     /**
      * Define new address according to new coordinate;

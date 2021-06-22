@@ -10,19 +10,24 @@
 #include "../Cars/ComfortCar.h"
 #include "../Cars/ComfortPlusCar.h"
 #include "../Cars/BusinessCar.h"
+#include "../Exceptions/PassengerBlockedException.h"
+#include "../Exceptions/IncorrectLoginException.h"
 #include <bits/stdc++.h>
 
 
-Passenger* System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
-    Passenger* refToNewPassenger = PassengerGateway::addPassenger(name, phoneNumber, password);
+void System::registerPassenger(const string &name, const string &phoneNumber, const string &password) {
+    PassengerGateway::addPassenger(name, phoneNumber, password);
     DB_Helper::writeListOfPassenger(); // update BD
-    return refToNewPassenger;
 }
 
-Driver* System::registerDriver(const string &name, const string &phoneNumber, const string &password, Car* car) {
-    Driver* refToNewDriver = DriverGateway::addDriver(name,phoneNumber,password, car);
+void System::registerDriver(const string &name, const string &phoneNumber, const string &password) {
+    DriverGateway::addDriver(name,phoneNumber,password);
     DB_Helper::writeListOfDrivers();
-    return refToNewDriver;
+}
+
+void System::registerAdmin(const string &name, const string &phoneNumber, const string &password) {
+    AdminGateway::addAdmin(name,phoneNumber,password);
+    DB_Helper::writeListOfAdmins();
 }
 
 Car* System::registerCar(const string& model, const string& color, const string& number, CarType carType) {
@@ -36,24 +41,34 @@ const list<Order> &System::getListOfAllOrders() {
 }
 
 
-Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
-    Date startDate = Date::getCurrentDate();
-    for(Driver& driver: DriverGateway::getListOfAllDrivers()) {
-        if (driver.getCar()->getType() == carType && driver.isReady(startDate)) {
-            int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
-           // int duration = distance / 70 ; // average speed of car is 70 km/h
-            int duration = 1; // we use constant 1 minute for easily testing. For real program I'll use the previous line
-            Date endDate = startDate + duration;
-            int cost = (distance * driver.getCar()->getRate()) / 1000;
-            Output::printCondition(cost,duration);
-            string answer;
-            cin >> answer;
 
-            if(answer == "Yes"){
-                return makeOrder(startDate,endDate,startLocation,endLocation,passenger,&driver,cost,distance);
-            }
-            else{
-                return nullptr;
+Order* System::preOrder(const Location &startLocation, const Location &endLocation, Passenger *passenger, CarType carType) {
+    if(passenger->isBlockedByAdmin()){
+        throw PassengerBlockedException(passenger);
+    }
+    if(!passenger->canMakeOrder()){
+        throw PassengerIsOnTripException(passenger);
+    }
+
+    Date startDate = Date::getCurrentDate();
+    for(Driver& driver: DriverGateway::getMutableListOfAllDrivers()) {
+        for(Car* car: driver.getCars()) {
+            if (car->getType() == carType && driver.isReady(startDate)) {
+                int distance = Location::getDistance(startLocation, endLocation) * 100; // in km (scale of map is 1:100)
+                // int duration = distance / 70 ; // average speed of cars is 70 km/h
+                int duration = 1; // we use constant 1 minute for easily testing. For real program I'll use the previous line
+                Date endDate = startDate + duration;
+                int cost = (distance * car->getRate()) / 1000;
+                Output::printCondition(cost, duration);
+                string answer;
+                cin >> answer;
+
+                if (answer == "Yes") {
+                    return makeOrder(startDate, endDate, startLocation, endLocation, passenger, &driver, car, cost,
+                                     distance);
+                } else {
+                    return nullptr;
+                }
             }
         }
     }
@@ -63,19 +78,20 @@ Order* System::preOrder(const Location &startLocation, const Location &endLocati
 }
 
 Order* System::makeOrder(const Date &startDate, const Date &endDate, const Location &startLocation,
-                         const Location &endLocation, Passenger *passenger, Driver *driver, int cost,
+                         const Location &endLocation, Passenger *passenger, Driver *driver, Car* car, int cost,
                          int distance) {
-    Order order(startDate,endDate,startLocation,endLocation,passenger,driver,cost,distance);
+    Order order(startDate,endDate,startLocation,endLocation,passenger,driver,car,cost,distance);
     listOfAllOrders.push_back(order);
 
     PassengerGateway::addOrder(passenger,&listOfAllOrders.back());
     DriverGateway::addOrder(driver,&listOfAllOrders.back());
 
-
+/*
     // Random decreasing number of bottles
     if(driver->getCar()->getType() > CarType::ECONOMY){
         dynamic_cast<ComfortCar*>(driver->getCar())->decreaseBottles(); // safe cast
     }
+*/
 
     DB_Helper::writeListOfOrders();
 
@@ -90,5 +106,36 @@ const Order *System::findOrderById(int id) {
     }
     return nullptr;
 }
+
+Driver *System::loginAsDriver(const string &phoneNumber, const string &password) {
+    for(auto& driver: DriverGateway::getMutableListOfAllDrivers()){
+        if(driver.getPhoneNumber() == phoneNumber && driver.getPassword() == password){
+            return &driver;
+        }
+    }
+    throw IncorrectLoginException();
+}
+
+Passenger *System::loginAsPassenger(const string &phoneNumber, const string &password) {
+    for(auto& passenger: PassengerGateway::getMutableListOfAllPassengers()){
+        if(passenger.getPhoneNumber() == phoneNumber && passenger.getPassword() == password){
+            return &passenger;
+        }
+    }
+    throw IncorrectLoginException();
+}
+
+Admin *System::loginAsAdmin(const string &phoneNumber, const string &password) {
+    for(auto& admin: AdminGateway::getMutableListOfAllAdmins()){
+        if(admin.getPhoneNumber() == phoneNumber && admin.getPassword() == password){
+            return &admin;
+        }
+    }
+    throw IncorrectLoginException();
+}
+
+
+
+
 
 
